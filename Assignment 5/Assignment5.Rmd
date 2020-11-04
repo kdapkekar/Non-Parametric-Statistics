@@ -1,0 +1,200 @@
+---
+title: "Assignment 5"
+output: html_notebook
+---
+1. The data set asthma comes from a study of the relationship between childhood asthma and exposure to
+air pollution from concentrated animal feeding operations (CAFOs). For this problem, treat asthma
+(Yes/No) as following a binomial distribution given exposure, and use a smooth version of logistic
+regression for (a)-(c) below.
+
+(a) Choose a criterion by which to select the smoothing parameter. Plot this criterion versus the
+smoothing parameter and choose the optimal value for use in (b) and (c).
+
+
+```{r}
+df1 = data.frame(asthma)
+library(stringr)
+df1$Asthma = str_replace(df1$Asthma,"Yes",'1')
+df1$Asthma = str_replace(df1$Asthma,"No",'0')
+df1<-df1[order(df1$Exposure),]
+attach(df1)
+A<-as.numeric(as.character(df1$Asthma))
+E<-df1$Exposure
+fitl$deviance
+library(locfit)
+n <- length(A)
+k <- seq(10,n,by=10)    #h = k/n 
+cv <- mcr <- gcv <- rep(0,length(k))
+for (i in 1:length(k)){
+  fit <- locfit(A~lp(E,nn=k[i]/n,deg=1),family="binomial",ev=dat(cv=TRUE))
+  pihat <- fitted(fit)
+  yhat <- (pihat > .5)*1              
+  mcr[i] <- mean(abs(A-yhat))      
+  cv[i] <- (-2*(sum(log(pihat[A==1 ]))+sum(log(1-pihat[A==0 ])))/n)   
+  #  gcv[i] <- gcv(fit)["gcv"]
+  gcv[i]<- (-2*n*fit$dp["lk"]/(n-fit$dp["df2"])^2)
+}
+par(mfrow=c(1,2))
+plot(k,mcr,type="l",xlab = 'index',ylab="Misclassification rate", ylim=c(.0,.2))
+plot(k,cv,type="l",xlab = 'index',ylab="CV using deviance")
+
+par(mfrow=c(1,1))
+plot(k,cv,type="l",xlab = 'index',ylab="CV using deviance",main="Cv vs GCV",ylim=c(0.0,1.5))
+lines(k,gcv,type="l",xlab = 'index',ylab="GCV", col='blue')
+```
+
+(b) Plot a smooth curve estimating the relationship between exposure and the log-odds of developing asthma.
+
+
+```{r}
+h_cv<-k[which.min(cv)]
+which.min(cv)
+h_gcv<-k[which.min(gcv)]
+which.min(gcv)
+fit <-locfit(A~lp(E,nn=h_gcv/n,deg = 1),family="binomial",ev=dat(cv=TRUE))
+pihat <- fitted(fit)
+plot(E,log(pihat/(1-pihat)),type = "l",xlab = 'Exposure',ylab ='log-odds of developing asthma')
+
+```
+(c) Plot a smooth curve estimating the relationship between exposure and the probability of developing
+asthma, with confidence bands.
+
+
+```{r}
+plot(E,fitted(fit),type="l",xlab='Exposure',ylab='probability of developing asthma')
+plot(fit,band='local',get.data = T,main='with degree=1',xlab = 'Exposure',ylab='Asthma')
+
+```
+
+(d) Prepare an ANOVA table (or rather, an analysis of deviance table) testing the sequence of models:
+Null ⊂ Linear ⊂ Nonlinear
+
+```{r}
+fit1<-lm(A~1,family="binomial")
+fit2<-lm(A~E,family="binomial")
+fit3 <- ksmooth(A,E,kernel="normal",bandwidth=30)
+anova(lm(fit3$y~fit3$x))
+anova(fit1,fit2)
+```
+
+3. The library ISLR contains a dataset called Wage with information about wages and demographic factors
+( age, gender, health, education, etc). Fit three splines to estimate the relationship between age and
+wage: natural base, B-spline and smooth-splines.
+
+
+```{r}
+library(ISLR)
+names(Wage)
+str(Wage)
+Wage<-Wage[order(Wage$age),]
+head(Wage)
+attach(Wage)
+
+
+```
+(a) State the criterion by which to select the smoothing parameter and use it to select. Plot this
+criterion versus the smoothing parameter and choose the optimal value for use in (b) and (c).
+```{r}
+#Plotting the Regression Line to the scatterplot  
+library(splines)
+fit<-lm(Wage$wage~bs(Wage$age))
+plot(Wage$age,Wage$wage,col="grey",xlab="Age",ylab="Wages",main = "Regression plot")
+lines(Wage$age,predict(fit),col="darkgreen",lwd=2,type="l")
+
+lm.fit=lm(wage~age,data=Wage)
+coef(lm.fit)
+
+plot(age,wage,col = 'grey')
+lines(smooth.spline(age,wage,df=10),lwd=2,col="blue")
+lines(smooth.spline(age,wage,df=61),lwd=2,col="green")
+
+
+```
+
+
+(b) Plot a smooth curve estimating the relationship between age and the wages.
+
+```{r}
+plot(age,wage,col='grey')
+spline_fit_10=smooth.spline(Wage$age,Wage$wage,df=10)
+spline_fit_CV=smooth.spline(Wage$age,Wage$wage,cv=TRUE)
+spline_fit_CV$df
+lines(spline_fit_10$x,spline_fit_10$y,lwd=2,col='red')
+lines(spline_fit_CV$x,spline_fit_CV$y,lwd=2,col='blue')
+
+```
+
+(c) Compare the three models.
+
+```{r}
+plot(age,wage,col='gray')
+#Natural spline model 
+fit1<-lm(wage~ns(age,df=10))
+lines(age,predict(fit1),lwd =2,col='yellow')
+#B-spline model
+fit2<-lm(wage~bs(age,df=10))
+lines(age,predict(fit2),lwd =2,col='blue')
+#Smoothing spline model
+#plot(age,wage,col='gray')
+lines(smooth.spline(age,wage,df=10),lwd =2,col='Red')
+lines(smooth.spline(age,wage,df=61),lwd =2,col='black')
+legend("topright",c("Natural Spline","B-spline","Smoothing Spline with 10 df","Smoothing Spline with 61 df"),col=c("yellow","blue","red","black"),lwd=2)
+```
+
+(d) Use B-splines to create 4 plots corresponding to splines with degrees of freedom = p × number of
+points, for the following p’s: p = 0.05, 0.5, 0.75, 0.98.
+
+```{r}
+n=length(age)
+df1=floor(.05*n)
+#plot(age,wage,col="grey")
+fit3<-lm(wage~bs(age,df=df1))
+plot(age,wage,col="grey",main=paste('df=',df1,' (n points)'))
+lines(age,predict(fit3),lwd =2,col='blue')
+
+df2 = floor(.5*n)
+fit4<-lm(wage~bs(age,df=df2))
+plot(age,wage,col="grey",main=paste('df=',df2,' (n points)'))
+lines(age,predict(fit4),lwd =2,col='green')
+
+df3 = floor(.75*n)
+fit5<-lm(wage~bs(age,df=df3))
+plot(age,wage,col="grey",main=paste('df=',df3,' (n points)'))
+lines(age,predict(fit5),lwd =2,col='yellow')
+
+df4=floor(.98*n)
+fit6<-lm(wage~bs(age,df=df4))
+plot(age,wage,col="grey",main=paste('df=',df4,' (n points)'))
+lines(age,predict(fit6),lwd =2,col='red')
+```
+4 (a) Write the set of truncated spline basis functions for representing a cubic spline function with three knots inside [0, 1].
+
+```{r}
+##
+library(splines)
+X <- seq(0, 1, length=100)
+knots <- c(0.25, 0.50, 0.75)
+n=length(x)
+set.seed(1); err=1
+y<- (2.3*cos(3.0*x) + 1.2*sin( 4.5*x) + cos(1.92*x)  + rnorm(n, 0, err))
+
+
+```
+
+(b) For x ∈ [0, 1] and equally spaced knots, plot the above basis functions (exclude the intercept term).
+```{r}
+plot(x,y, col="grey")
+lines(x, predict(lm(y~ns(x, df=10,knots=c(0.25, 0.50, 0.75),intercept=FALSE))), col='blue')
+```
+
+(c) For the same range and knots as in (b), plot the B–spline basis functions, again excluding the
+intercept term. You may use the splines package to construct them for you.
+```{r}
+library(splines)
+spl <- bs(x,df=10,knots=c(0.25, 0.50, 0.75),intercept=FALSE)  
+plot(spl[,1]~x, ylim=c(0,max(spl)), type='l', lwd=2, col=1, 
+     xlab="B-spline basis", ylab="")
+for (j in 2:ncol(spl)) lines(spl[,j]~x, lwd=2, col=j)
+```
+
+
