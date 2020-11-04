@@ -1,0 +1,215 @@
+---
+title: "Assignment6_P3"
+author: "KR"
+date: "4/29/2020"
+output:
+  word_document: default
+  html_document: default
+---
+
+1.	Build a regression tree for Chicago Homes training data set and use it to predict the list prices of homes in the Chicago Homes test set.  Again do not use ZIP code
+```{r}
+PredAcc = function(y,ypred){
+    RMSE = sqrt(mean((y-ypred)^2))    #root MSE or RSS
+    MAE = mean(abs(y-ypred))           # mean absolute error
+    MAPE = mean(abs(y-ypred)/y)*100    # mean absolute proportional error
+    Rsqr<- 1-sum((y-ypred)^2)/sum((y-mean(y))^2)
+    return(data.frame(RMSE=RMSE,MAE=MAE,MAPE=MAPE,'R.sqr'=Rsqr))
+}
+```
+Load the datasets (ChiHomes(train).csv and ChiHomes(test).csv) and remove ZIP. 
+```{r}
+CH.train <- read.csv("D:/SPRING 2020/581/Assignment 6/ChiHomes(train).csv")
+CH.test <- read.csv("D:/SPRING 2020/581/Assignment 6/ChiHomes(test).csv")
+CH2.train<-CH.train[,-3]
+CH2.test<-CH.test[,-3]
+```
+
+1. a) Look at the data in the training set:
+```{r}
+library(psych)
+pairs.panels(CH2.train, 
+             method = "pearson", # correlation method
+             hist.col = "#00AFBB",
+             density = TRUE,  # show density plots
+             ellipses = TRUE # show correlation ellipses
+)
+```
+
+1.b) Look at List price by itself (plot its histogram) and add a density curve to the histogram. By defaul, histogram plots frequencies. So you need to indicate probability=TRUE if you are going to add a density plot to the histogram.
+```{r}
+hist(CH2.train$ListPrice,probability = TRUE)
+lines(density(CH2.train$ListPrice))
+```
+Now do the same to log of ListPrice
+
+```{r}
+hist(log(CH2.train$ListPrice), probability = TRUE)
+lines(density(log(CH2.train$ListPrice)))
+```
+Comment on the distribution of ListPrice vs log(ListPrice). Why would one want to develop a model with log(ListPrice) instead of ListPrice?
+
+Answer: The distribution of log(ListPrice) is closer to a normal distribution.
+
+
+1.c) We will build the model then for log(ListPrice).
+
+Build an initial model for log(ListPrice) using defaul values for rpart, and plot it (use rpart.plot)
+```{r}
+library(rpart)
+rp <- rpart(log(ListPrice) ~ .,data=CH2.train)
+summary(rp)
+
+library(rpart.plot)
+rpart.plot(rp)
+```
+
+1.c.i) What are the 3 most important variables?
+```{r}
+rp$variable.importance
+```
+
+ImputedSQFT, BATHS and BEDS.
+
+1.c.ii) What is the prediction accuracy of this default model? Be careful here because we have used log(ListPrice), 
+```{r}
+logpred<-predict(rp,newdata = CH2.test)
+library(spm)
+PredAcc(logpred, log(CH2.test$ListPrice)) 
+```
+
+2.	Now use the training data  to tune your RPART model using cp and  minbucket (or minsplit) to improve the model.
+
+```{r}
+library(rpart)
+
+rp <- rpart(log(ListPrice) ~. ,data=CH2.train,control=rpart.control(xval=10,cp=0.0001,minbucket = 10))
+```
+Visualise x-val results as a function of the complexity parameter using plotcp(rp) 
+
+```{r}
+plotcp(rp, las = 2, cex.axis = 0.85) #
+```
+
+2.a) Make a judgement call to choose cp
+Answer: cp = 0.0068
+
+2.b) make your model with the chosen value for cp and check the predicted accuracy (PredAcc from notes)
+```{r}
+rp2 <- rpart(log(ListPrice) ~ .,data=CH2.train,control=rpart.control(xval=10 ,cp=0.0068))
+logpred<-predict(rp2,newdata = CH2.test)
+PredAcc(logpred, log(CH2.test$ListPrice))
+
+```
+
+2.c) Plot your model with rpart.plot
+```{r}
+library(rpart.plot)
+rpart.plot(rp2)
+```
+
+2.d) plot log(ListPrice) vs its predicted value and comment on your findings. Is it reasonable mosdel?
+```{r}
+plot(log(CH2.test$ListPrice), logpred) 
+```
+Comment: Yes, it is a reasonable model.
+
+
+3.	Using the Diamonds data set run the following code.
+
+Run the following code for the function below.
+```{r}
+attach(diamonds)
+tree.vary = function(fit,data=diamonds) {
+    n = nrow(data)
+    sam = sample(1:n,floor(n*.5),replace=F)
+    temp = rpart(formula(fit),data=data[sam,])
+    prp(temp,type=4,digits=3,roundint = FALSE)
+}
+```
+
+```{r}
+par(mfrow=c(2,2))
+for(i in 1:4){
+tree.vary(rp2,data=CH.train)
+}
+```
+```{r}
+
+head(diamonds)
+rp2 <- rpart(price ~ carat ,data=diamonds,control=rpart.control(xval=10 ,cp=0.0068))
+
+tree.vary = function(fit,data = diamonds) {
+n = nrow(data)
+sam = sample(1:n,floor(n*.5),replace=F)
+temp = rpart(formula(fit),data=data[sam,])
+prp(temp,type=4,digits=3,roundint = FALSE)
+}
+```
+```{r}
+par(mfrow=c(2,2))
+for(i in 1:4){
+tree.vary(rp2,data=diamonds)
+}
+```
+
+3.a) Look at each tree as it is plotted, what do you notice?
+
+i. As carat increases the price also increases
+ii. Carat (<0.995 & >=0.995) group clearly stands out in all the 4 trees meaning we see a start difference of prices for both the groups and is definetly a better cut
+
+3.b)  Build a bagged regression tree for Chicago Homes training data set and use it to predict the list prices of homes in the Chicago Homes test set.
+
+```{r}
+library(ipred)
+CH.bag = bagging(log(ListPrice)~.,data=CH2.train,coob=T,nbagg=50,
+                   control=rpart.control(cp=.002,minsplit=2,xval=0) )
+```
+
+Find the predicted accuracy of the bagged model:
+```{r}
+predicted <- predict(CH.bag, CH2.test)
+PredAcc(predicted,log(CH2.test$ListPrice))
+```
+How does it compare with the model developed in 2.c) ? 
+
+Answer: The error is lower in the bagging model than the rpart model, thus the bagging model predicts more accurately.
+
+
+
+4. Build a random forest using Chicago Homes training data set and then predict the list prices of homes in the Chicago Homes test set.  Again we will not use ZIP code in the modeling process.
+
+Build the model:
+```{r message = FALSE}
+library(randomForest)
+CH.rf<-randomForest(log(ListPrice)~., data=CH2.train)
+CH.rf
+```
+
+4.a) Find the most important variables by plotting:
+```{r}
+varImpPlot(CH.rf)
+```
+4.a.i) Which two variables are candites to be dropped from the model?
+
+SoldPrev and BeenReduced.
+
+4.a.ii) How does log(ListPrice)  change as a function of the top four numeric predictors?  Do the partial plots on the 4 leading variables:
+```{r}
+par(mfrow=c(2,2))
+partialPlot(CH.rf,CH2.train, ImputedSQFT)
+partialPlot(CH.rf,CH2.train, BATHS)
+partialPlot(CH.rf,CH2.train, BEDS)
+partialPlot(CH.rf,CH2.train, LONGITUDE)
+par(mfrow=c(1,1))
+```
+
+4.b) Find the model's predictive accuracy  (use PredAcc)
+```{r}
+predicted <- predict(CH.rf, CH2.test)
+PredAcc(predicted,log(CH2.test$ListPrice))
+```
+How does it compare to the models in 2.c) and 3.b)
+
+The random forest model shows greater predictive accuracy than the rpart and bagging models.
+

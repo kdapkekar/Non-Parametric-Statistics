@@ -1,0 +1,178 @@
+---
+title: "Assignment6_P3"
+author: "KR"
+date: "4/29/2020"
+output: html_document
+---
+
+1.	Build a regression tree for Chicago Homes training data set and use it to predict the list prices of homes in the Chicago Homes test set.  Again do not use ZIP code
+
+Load the datasets (ChiHomes(train).csv and ChiHomes(test).csv) and remove ZIP. 
+```{r}
+CH.train <- read.csv("~/Documents/classes/Non-parametric/DataSets/ChiHomes(train).csv")
+CH.test <- read.csv("~/Documents/classes/Non-parametric/DataSets/ChiHomes(test).csv")
+CH2.train<-CH.train[,-3]
+CH2.test<-CH.test[,-3]
+```
+
+1. a) Look at the data in the training set:
+```{r}
+library(psych)
+pairs.panels( ??  , 
+             method = "pearson", # correlation method
+             hist.col = "#00AFBB",
+             density = TRUE,  # show density plots
+             ellipses = TRUE # show correlation ellipses
+)
+```
+
+1.b) Look at List price by itself (plot its histogram) and add a density curve to the histogram. By defaul, histogram plots frequencies. So you need to indicate probability=TRUE if you are going to add a density plot to the histogram.
+```{r}
+hist( ?? ,probability = TRUE)
+lines(density( ?? ))
+```
+Now do the same to log of ListPrice
+
+```{r}
+hist( )
+lines( )
+```
+Comment on the distribution of ListPrice vs log(ListPrice). Why would one want to develop a model with log(ListPrice) instead of ListPrice?
+
+Answer:
+
+
+1.c) We will build the model then for log(ListPrice).
+
+Build an initial model for log(ListPrice) using defaul values for rpart, and plot it (use rpart.plot)
+```{r}
+library(rpart)
+rp <- rpart( ?? ~ .,data=CH2.train)
+summary(rp)
+
+library(rpart.plot)
+rpart.plot(rp)
+```
+
+1.c.i) What are the 3 most important variables?
+```{r}
+rp$variable.importance
+```
+
+1.c.ii) What is the prediction accuracy of this default model? Be careful here because we have used log(ListPrice), 
+```{r}
+logpred<-predict( ?? ,newdata = CH2.test)
+PredAcc(??, ??  )   
+```
+
+2.	Now use the training data  to tune your RPART model using cp and  minbucket (or minsplit) to improve the model.
+
+```{r}
+rp <- rpart(log(ListPrice) ~ .,data=CH2.train,control=rpart.control(xval=10,cp=0.0001,minbucket = 10))
+```
+Visualise x-val results as a function of the complexity parameter using plotcp(rp) 
+
+```{r}
+plotcp(rp) #
+```
+
+2.a) Make a judgement call to choose cp
+Answer: cp = 
+
+2.b) make your model with the chosen value for cp and check the predicted accuracy (PredAcc from notes)
+```{r}
+rp2 <- rpart(log(ListPrice)  ~ .,data=CH2.train,control=rpart.control(xval=10 ,cp=.003))
+
+
+```
+
+2.c) Plot your model with rpart.plot
+```{r}
+
+```
+
+2.d) plot log(ListPrice) vs its predicted value and comment on your findings. Is it reasonable mosdel?
+```{r}
+
+```
+Comment:
+
+
+3.	
+
+Run the following code for the function below.
+```{r}
+tree.vary = function(fit,data) {
+    n = nrow(data)
+    sam = sample(1:n,floor(n*.5),replace=F)
+    temp = rpart(formula(fit),data=data[sam,])
+    prp(temp,type=4,digits=3,roundint = FALSE)
+}
+```
+
+```{r}
+par(mfrow=c(2,2))
+for(i in 1:4){
+tree.vary(rp2,data=CH.train)
+}
+```
+
+3.a) Look at each tree as it is plotted, what do you notice?
+
+    i. 
+    ii. 
+
+3.b)  Build a bagged regression tree for Chicago Homes training data set and use it to predict the list prices of homes in the Chicago Homes test set.
+
+```{r}
+CH.bag = bagging(log(ListPrice)~.,data=CH2.train,coob=T,nbagg=50,
+                   control=rpart.control(cp=.002,minsplit=2,xval=0) )
+```
+
+Find the predicted accuracy of the bagged model:
+```{r}
+
+PredAcc(??,??)
+```
+How does it compare with the model developed in 2.c) ? 
+
+Answer:
+
+
+
+4. Build a random forest using Chicago Homes training data set and then predict the list prices of homes in the Chicago Homes test set.  Again we will not use ZIP code in the modeling process.
+
+Build the model:
+```{r}
+library(randomForest)
+CH.rf<-randomForest(log(ListPrice)~., data=CH2.train)
+CH.rf
+```
+
+4.a) Find the most important variables by plotting:
+```{r}
+varImpPlot(??)
+```
+4.a.i) Which two variables are candites to be dropped from the model?
+
+
+
+4.a.ii) How does log(ListPrice)  change as a function of the top four numeric predictors?  Do the partial plots on the 4 leading variables:
+```{r}
+par(mfrow=c(2,2)
+partialPlot(CH.rf,CH2.train, ??variable name)
+partialPlot(CH.rf,CH2.train, ??variable name)
+partialPlot(CH.rf,CH2.train, ??variable name)
+partialPlot(CH.rf,CH2.train, ??variable name)
+par(mfrow=c(1,1))
+```
+
+4.b) Find the model's predictive accuracy  (use PredAcc)
+```{r}
+
+ PredAcc(??,?? )
+```
+How does it compare to the models in 2.c) and 3.b)
+
+
+

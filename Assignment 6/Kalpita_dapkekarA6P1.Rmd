@@ -1,0 +1,354 @@
+---
+title: "Assignment6-part1"
+author: "KR"
+date: "4/20/2020"
+output: html_document
+---
+
+
+Assignment6 - Part 1: GAM basics
+
+1. Compare multivariate regression to multivariate GAM for the dataset Auto in ISLR library. 
+
+# load libraries
+```{r}
+library(ISLR)    # contains code and data from the textbook
+library(mgcv)     # needed for additive models
+library(earth)    # fit MARS models
+print(Auto)
+```
+
+## load data
+```{r}
+library(splines)
+data(Auto)   # from ISLR library
+# used View or head() to explore the dataset
+#enter code here
+head(Auto)
+str(Auto)
+# Multiple linear regression
+lm1 = lm(mpg ~.-name, data = Auto)
+summary(lm1)
+
+## Fit basic Mars model
+mars1<-earth(mpg~.-name,data = Auto)
+summary(mars1)
+mars2<-earth(mpg~.-name,data = Auto,degree = 2)
+summary(mars2)
+
+## Gam model
+library (gam)
+gam1 = gam(mpg ~ s(cylinders) + s(horsepower) + s(weight) + s(displacement) + s(year) + s(acceleration), data = Auto)
+summary(gam1)
+gam2 = mgcv::gam(mpg ~ s(cylinders,k=5) + s(horsepower,k=6) + s(weight,k=4) + s(displacement,k=4) + s(year,k=4) + s(acceleration,k=4), data = Auto)
+summary(gam2)
+
+```
+```{r}
+```
+
+#### 1. Data analysis: Construct a scatterplot of all variables, 
+plot(Auto) does the job but there are much better representations.If you are learning ggplots, consider ggpairs(Auto).
+
+Run the following code. 
+```{r}
+library(psych)
+pairs.panels(Auto[,9:1], 
+             method = "pearson", # correlation method
+             hist.col = "#00AFBB",
+             density = TRUE,  # show density plots
+             ellipses = TRUE # show correlation ellipses
+)
+```
+Enter comments here:
+
+a. What variables have a clear relationship with mpg?<br>
+Ans:Displacement,Horsepowerand weight have a clear relationship with mpg.
+
+b. What variables are highly correlated? 
+Ans: Displacement and Cylinders,
+Weight and Displacement,
+Displacement and horsepower,
+Cylinders and weight,
+Weight and horsepower are highly correlated.
+
+c. What problems can highly correlated variables bring to the model?
+1.Highly correlated variables affect the independent variables.
+2.Highly correlated variables makes coefficients sensitive, which varies even if there is a small change in the model.
+3.Problems increases with the degree of the freedom.
+
+
+#### 2. Fit a linear model regression mpg on displacement, horsepower,weight, acceleration, year, and cylinder. Please not that cylinder may be a categorical variable and if so, it should be added as factor.
+```{r} 
+fit_lm<-lm(mpg~displacement+horsepower+weight+acceleration+year+as.factor(cylinders),data=Auto)
+summary(fit_lm)
+AIC(fit_lm)
+```
+a. Comment on what you observe from the output.<br>
+adjusted $R^2=$<br: Adjusted R-squared adjust the number of variables.It is always less than R-squared,beacuse R-squared tries to overfit the data. With every new variable, R-squared is increased considering that the model is improved, even if the new variable doesn't improve the model. Adjusted R-squared is increased only if the new variable improves the model.
+$s=$<br> : Standard error is 3.191 which is high.
+
+AIC : Minimun AIC values are used for model selection criteria.Smaller the AIC ,better the fit. As AIC is 2034 so it is not better fit.Let's comapre the AIC of next model.
+
+b. What variables seem to be not significant in the model?
+Ans: Variables such as displaceement,acceleration,name,cylinders(=6) seems to be not significant in the model.
+
+
+c. Consider removing variables that were not significant. Warning: this should be done one variable ar the time. Keep track of the adjusted $R^2$. After doing your investigatoin, enter the simplified model here:
+```{r}
+#code for model with summary
+simple_lm<-lm(mpg~horsepower+weight+year+as.factor(cylinders),data=Auto)
+summary(simple_lm)
+AIC(simple_lm)
+
+#With interaction effect
+simple_lm1<-lm(mpg~.-name-cylinders-acceleration+year:weight+displacement:weight   +acceleration:horsepower+acceleration:weight, data=Auto)
+summary(simple_lm1)
+AIC(simple_lm1)
+```
+Comment on the strength of the simpler model. Be sure to comment on adjusted $R^2$, $s$ and AIC.
+
+Ans: I tried to fit the linear regression model with interaction effect which gave me the increased adjusted R squared. All the singles values were giving Adjusted R squared around 0.80 which is not increased as compared to fit_lm model. So interaction gave the good results.
+Adjusted R squared is increased from 0.8328 to 0.8693
+Standard error is 2.8 for simple model which is less as compared to fit_lm  which was 3.1
+AIC for simpler model is also less as compared to fit_lm
+
+
+Also run the collowing comparison:
+```{r}
+anova(simple_lm,simple_lm1,fit_lm)
+```
+Was the decrease in Sums of Square significant?
+Ans: Yes, there is a decrease in sums of square significant by 763.
+
+
+#### 3. How does the fitted values fit vs main variables?
+```{r}
+plot(mpg~horsepower,data=Auto)
+o<-order(Auto$horsepower)
+lines(Auto$horsepower[o],simple_lm$fitted.values[o],col='blue')
+
+plot(mpg~year,data=Auto)
+o<-order(Auto$year)
+lines(Auto$year[o],simple_lm$fitted.values[o],col='blue')
+
+plot(mpg~weight,data=Auto)
+o<-order(Auto$weight)
+lines(Auto$weight[o],simple_lm$fitted.values[o],col='blue')
+
+plot(mpg~cylinders,data=Auto)
+o<-order(Auto$cylinders)
+lines(Auto$cylinders[o],simple_lm$fitted.values[o],col='blue')
+# 
+# plot(mpg~horsepower,data=Auto)
+# o<-order(Auto$horsepower)
+# lines(Auto$horsepower[o],simple_lm$fitted.values[o],col='blue')
+# repeat with another variable
+
+
+```
+Comment on whether you see a good fit or you see a problem (what type of problem?)
+Ans: Yes, line almost cover all the point with more variable. I think it is good fit.
+
+
+#### 4. Assessing the model graphically
+
+The command plot(model) gives you: 
+
+a. residuals vs fitted, to see the pattern of error terms. We don't want to see any significant patter.
+b. normal probability plot to assess the normality of the error terms.
+c. Scale location, that helps seeing if there is a problem with the variance. (we want constant variance)
+d. Residuals vs leverage: helps detect outliers.
+```{r}
+plot(simple_lm)
+hist(simple_lm$residuals)
+
+```
+Summarize what you observe in the first 2 plots. Are the residuals ok (do they look independet/random or do you observe a pattern?, Are the residuals sufficiently normal or do you see a problem with normality?)
+
+Ans: First plot: For Residuals vs fitted values, I think is there is no pattern, points appears to be scattered. There is curve which is telling that these errors have a problem, linear model is not able to capture the pattern. There is a problem with the variance, as the fitted value is increased above 15, the variance is wider as ccompare to values below 15.
+
+Second plot: Points are mostly along the straight line,so residuals look close to normal distribution but it has change the direction on the right.
+
+
+Now let's plot the fitted values vs the actual values:
+```{r}
+plot(simple_lm1$fitted.values, Auto$mpg, main="Actual versus fitted values",)
+```
+What do you observe?
+Ans: I think it is the straight line along the diagonal. It is much better in lower and upper values. It is a straight line.
+
+
+
+
+
+#### 5. Now we will attempt to do the same but this time fitting a gam model.
+
+Note: categorical variables should not be added with a smother
+- what variables are categorical?
+```{r}
+fit_gam<-mgcv::gam(mpg~s(displacement)+s(horsepower)+s(weight)+s(acceleration)+s(year)+cylinders,data=Auto)
+summary(fit_gam)
+AIC(fit_gam)
+sd(resid(fit_gam))
+```
+
+a. Comment on what you observe from the output.<br>
+adjusted $R^2=$<br>: Adjusted R Squared is increased(0.884) as compared to linear model which was 0.86.
+Explained Deviance: It is 89%.
+
+b. Compute $s=$ the standard deviation for the residuals and IAC:<br>
+$s$=   <br> Standard deviation is 2.5 is less as compared to linear model which was 2.8.
+AIC=   <br> AIC is reduced from 1948 to 1898.
+
+
+c. The output for smooth terms has a bunch of information. The first column reads edf, which stands for effective degrees of freedom. This value represents the complexity of the smooth. An edf of 1 is equivalent to a straight line. An edf of 2 is equivalent to a quadratic curve, and so on, with higher edfs describing more wiggly curves.
+
+What smoothers seem to be not significant in the model? 
+Ans: Acceleration
+
+Is there a smoother that seems to be linear?
+Ans: There are no smoothers that seems to be linear.
+
+Is there a smoother that seems to be quadratic?
+Ans: There are smoothers that seems to be quadratic such as displacement,horsepower,weight and acceleration.
+year is more something than quadratic.
+
+
+
+
+d. Consider removing terms that were not significant. Warning: this should be done one term at a time. Keep track of the adjusted $R^2$ and explained deviance. After doing your investigatoin, enter the simplified model here:
+```{r}
+#code for model with summary
+# simple_gam<-mgcv::gam(mpg~s(displacement)+s(horsepower)+s(weight)+cylinders:weight+displacement:weight   +acceleration,data=Auto)
+# summary(simple_gam)
+# AIC(simple_gam)  
+simple_gam<-mgcv::gam(mpg~s(displacement)+s(horsepower)+s(weight)+s(year),data=Auto)
+summary(simple_gam)
+AIC(simple_gam)
+```
+Comment on the strength of the simpler model. Be sure to comment of adjusted $R^2$, deviance explained and AIC.
+Ans: Adjusted R-squared is 0.883 after dropping insignificant variable which is decreased by 0.1%.
+Deviance explained for simpler model is 88.7 which is decreased by 0.3%.
+AIC is increased to 1901 from 1898.
+
+
+
+#### 6. How does the fitted values fit vs main variables?
+```{r}
+
+plot(mpg~horsepower,data=Auto)
+o<-order(Auto$horsepower)
+lines(Auto$horsepower[o],simple_gam$fitted.values[o],col='blue')
+
+plot(mpg~weight,data=Auto)
+o<-order(Auto$weight)
+lines(Auto$weight[o],simple_gam$fitted.values[o],col='blue')
+
+
+plot(mpg~year,data=Auto)
+o<-order(Auto$year)
+lines(Auto$year[o],simple_gam$fitted.values[o],col='blue')
+
+#let's plot the fitted values vs the actual values
+plot(simple_gam$fitted.values, Auto$mpg, main="Actual versus fitted values",)
+```
+
+Comment on whether this is a better fit than the linear one.
+Ans: I think yes, it is better fit than the linear one.
+
+
+#### 4. Assessing the model graphically
+
+The plots generated by mgcv's plot() function are partial effect plots. That is, they show the component effect of each of the smooth or linear terms in the model, which add up to the overall prediction.
+
+
+The first option we have when making our plots is which partial effects to show. The select argument chooses which terms we plot, with the default being all of them. 
+ex: plot(gam_model, select = c(2, 3))
+
+
+Normally, each plot gets its own page, but using the pages argument, you can decide how many total pages to spread plots across. Using pages = 1, you show all your partial effects together (that is, if all the variables fit, otherwise you have to increase the number of pages)
+ex: plot(gam_model, pages = 1)
+
+
+Finally, by default we only see the smooth plots, but by setting all.terms = TRUE, we can display partial effects of linear or categorical terms, as well.
+ex: plot(gam_model, pages = 1, all.terms = TRUE)
+
+a. See the output partial effects plots
+```{r}
+plot(simple_gam,all.terms = TRUE,se=TRUE,shade=TRUE,residuals=TRUE,pch=1,cex=1,col='blue')
+
+```
+
+b. Plot residuals vs fitted values
+```{r}
+plot(simple_gam$residuals,simple_gam$fitted.values)
+```
+Comment on your findings:
+Ans: Points appear randomly scattered,there is no such particular pattern.
+
+c. test the normality of error by making a normal probability plot for the residuals. Include the diagonal line.
+
+```{r}
+errors <- simple_gam$residuals
+qqnorm(errors, xlab = "Normal Scores", ylab = "Standardized Residuals")
+qqline(errors)
+```
+Comment on your findings: 
+Ans: Points in the middle are long the straight line, so residuals look close to normal distribution. Points in the beginning and in the last, they have change the direction(skewed). 
+
+### 5. Checking GAM
+Now that we can fit and plot GAMs, we need some checks to make sure that we have well-fit models. There are several pitfalls we need to look out for when fitting GAMs. Thankfully, mgcv provides helpful tools to check for these.
+
+a. We've learned that the number of basis functions determines how wiggly a smooth can be. If there are not enough basis functions, it may not be wiggly enough to capture the relationships in data. 
+It's not always obvious visually whether we have enough basis functions. We can test for this, though, via the gam.check() function.
+
+b. Convergence: gam.check() reports on model convergence. Here, it reports full convergence. R has found a best solution. If the model has not converged, results are likely not correct. This can happen when there are too many parameters in the model for not enough data.
+
+c. Random pattern in residuals: gam.check() provides a table of basis checking results. This shows a statistical test for patterns in model residuals, which should be random. Each line reports the test results for one smooth. It shows the k value or number of basis functions, the effective degrees of freedom, a test statistic, and p-value. Small p-values indicate that residuals are not randomly distributed. This often means there are not enough basis functions.
+
+This is an approximate test. Always visualize your results too, and compare the k and edf values in addition to looking at the p-value.
+```{r}
+gam.check(simple_gam)
+```
+Did the algorithm converge?
+Ans: Yes, the algorithm converged.
+
+Which smooths do not have sufficient numbers of basis functions?
+Ans: year and displacement do not have suffcient numbers of basis function. 
+
+
+d. Plots: gam.check() provides four plots
+
+- probability plot (deviance residuals vs quantiles)
+- Residuals vs linear predictor
+- Histogram of residuals
+- Reponse vs fitted values
+
+Comment on your findings: are the residuals sufficiently normal? Does this model provide a better fit (response vs fitted)?
+Ans: Residuals are sufficiently normal and provides a better fit.
+
+#### 6. 
+Inspect the pairwise concurvity for variables in fit_gam, then answer the question.
+```{r}
+concurvity(fit_gam, full = FALSE)
+```
+Which two variables have the greatest worst-case concurvity?
+Ans: Displacement and Horsepower.
+
+
+#### 7. Conclusion.
+Compare the linear model to the GAM model. Summarize findings.
+Ans: For Linear model:
+      Adjusted R squared is 0.8693
+      Standard error is 2.8.
+      AIC is 1937
+
+For Gam model:
+      Adjusted R-squared is 0.883,
+      Deviance explained is 88.7.
+      AIC is 1901.
+I think Gam model did best as compared to linear model.
+
+
+

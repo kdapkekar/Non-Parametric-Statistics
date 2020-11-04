@@ -1,0 +1,737 @@
+Type,City,ZIP,ListPrice,BEDS,BATHS,ImputedSQFT,ParkSpots,HasGarage,DOM,BeenReduced,SoldPrev,LATITUDE,LONGITUDE
+Townhouse,Arlington Heights,60005,155000,3,1.5,866,2,None,853,No,Yes,42.067401,-87.990181
+Condo/Coop,Arlington Heights,60005,159000,2,2,1200,2,None,546,No,Yes,42.04242,-87.973687
+Single Family Residential,Arlington Heights,60005,569900,4,2.5,2184,1,Garage,381,Yes,Yes,42.07701,-87.97501
+Single Family Residential,Arlington Heights,60004,1550000,4,4.5,4200,3,Garage,381,Yes,Yes,42.094795,-87.959104
+Single Family Residential,Arlington Heights,60004,575000,4,3.5,3500,2,Garage,343,Yes,No,42.094792,-87.974719
+Single Family Residential,Arlington Heights,60004,284900,3,1,1150,2,Garage,337,Yes,Yes,42.107136,-88.002899
+Single Family Residential,Arlington Heights,60004,830000,5,3.5,3890,3,Garage,309,No,No,42.100643,-87.968754
+Single Family Residential,Arlington Heights,60004,437000,3,2.5,2980,2,Garage,305,Yes,No,42.118101,-87.959258
+Single Family Residential,Arlington Heights,60005,779900,4,3,2700,2,Garage,289,No,No,42.079382,-87.988127
+Single Family Residential,Arlington Heights,60005,509000,5,2.5,3000,2,Garage,276,No,No,42.070165,-87.968834
+Single Family Residential,Arlington Heights,60004,325000,3,2,1629,2,Garage,261,Yes,Yes,42.120058,-87.995435
+Single Family Residential,Arlington Heights,60004,225000,2,1,1067,0,None,256,No,Yes,42.098011,-88.00251
+Single Family Residential,Arlington Heights,60004,269990,3,1.5,1271,1,Garage,255,Yes,No,42.076937,-87.966181
+Townhouse,Arlington Heights,60004,296000,3,2,1629,1,Garage,253,No,No,42.104672,-87.962021
+Single Family Residential,Arlington Heights,60004,879900,4,4.5,3580,2,Garage,253,No,Yes,42.096887,-87.988102
+Condo/Coop,Arlington Heights,60005,262500,2,2,1500,2,None,248,Yes,No,42.082597,-87.98513
+Condo/Coop,Arlington Heights,60005,650000,3,3.5,2500,2,Garage,245,Yes,No,42.0815348,-87.98146
+Single Family Residential,Arlington Heights,60004,489000,3,1.5,1456,1,Garage,242,No,No,42.089354,-87.98247
+Single Family Residential,Arlington Heights,60005,798900,4,4,3850,3,Garage,235,No,Yes,42.08349,-87.997201
+Single Family Residential,Arlington Heights,60004,795000,4,3,3400,3,Garage,230,No,No,42.1122825,-87.988531
+Condo/Coop,Arlington Heights,60004,107500,1,1,906,1,Garage,228,Yes,Yes,42.108852,-87.982092
+Single Family Residential,Arlington Heights,60004,339000,4,2.5,1323,2,Garage,212,Yes,No,42.120607,-87.957041
+Condo/Coop,Arlington Heights,60004,99000,2,2,1382,1,None,163,Yes,Yes,42.123051,-87.967146
+Single Family Residential,Arlington Heights,60004,279900,3,2,1629,2,Garage,158,Yes,No,42.110613,-87.956344
+Single Family Residential,Arlington Heights,60005,359000,3,1.5,1612,2,Garage,158,No,Yes,42.066964,-87.974441
+Single Family Residential,Arlington Heights,60004,399000,4,3.5,2448,2,Garage,150,Yes,Yes,42.13154,-87.966984
+Single Family Residential,Arlington Heights,60004,899925,4,4,3800,3,Garage,147,No,Yes,42.094657,-87.973062
+Single Family Residential,Arlington Heights,60005,649925,4,2.5,3073,2,Garage,137,No,No,42.072469,-88.00279
+Condo/Coop,Arlington Heights,60005,132900,2,1.5,900,1,None,132,Yes,Yes,42.045491,-87.976016
+Townhouse,Arlington Heights,60004,199900,2,1.5,1400,1,Garage,130,No,No,42.148208,-88.009993
+Townhouse,Arlington Heights,60004,399000,3,2.5,2428,4,Garage,129,Yes,No,42.0931013,-88.002189
+Townhouse,Arlington Heights,60004,200000,3,1.5,1165,1,Garage,129,No,No,42.077282,-87.966951
+Single Family Residential,Arlington Heights,60005,299900,3,2,1800,2,Garage,128,Yes,No,42.081344,-87.986996
+Single Family Residential,Arlington Heights,60004,294999,3,2,1135,1,Garage,122,Yes,Yes,42.105824,-87.988171
+Single Family Residential,Arlington Heights,60004,839990,4,4.5,3385,3,Garage,122,No,No,42.108489,-87.990399
+Single Family Residential,Arlington Heights,60004,344900,3,1.5,1829,2,Garage,114,No,Yes,42.152255,-87.998848
+Single Family Residential,Arlington Heights,60005,399000,4,2.5,2600,2,Garage,114,No,No,42.054251,-87.983133
+Single Family Residential,Arlington Heights,60004,276400,3,1,1258,2,Garage,113,Yes,Yes,42.103147,-87.982798
+Condo/Coop,Arlington Heights,60005,299000,2,2,1470,1,Garage,113,Yes,No,42.0815348,-87.98146
+Single Family Residential,Arlington Heights,60004,945000,4,4.5,3806,3,Garage,106,No,Yes,42.100213,-88.000604
+Single Family Residential,Arlington Heights,60005,304925,3,2,1265,1,Garage,102,Yes,No,42.081394,-87.997976
+Single Family Residential,Arlington Heights,60005,675000,2,2,1296,2,Garage,101,Yes,No,42.075327,-87.988445
+Condo/Coop,Arlington Heights,60005,154900,2,2,1200,2,None,99,Yes,Yes,42.04242,-87.973687
+Single Family Residential,Arlington Heights,60005,379000,3,2,1796,1,Garage,99,Yes,No,42.081398,-87.998941
+Single Family Residential,Arlington Heights,60005,369000,3,3,1602,2,Garage,98,Yes,Yes,42.075375,-87.969275
+Single Family Residential,Arlington Heights,60004,845000,5,4.5,4819,4,Garage,98,Yes,Yes,42.119447,-87.979865
+Single Family Residential,Arlington Heights,60004,750000,4,2.5,2929,2,Garage,97,No,No,42.111429,-87.985876
+Single Family Residential,Arlington Heights,60004,829900,4,3.5,2930,3,Garage,97,No,No,42.111429,-87.985876
+Single Family Residential,Arlington Heights,60004,824900,5,4.5,3348,2,Garage,97,No,No,42.111429,-87.985876
+Condo/Coop,Arlington Heights,60004,78490,1,1,800,1,None,97,Yes,No,42.0985641,-87.955233
+Single Family Residential,Arlington Heights,60004,769900,4,3,4300,3,Garage,96,Yes,Yes,42.127859,-87.979929
+Single Family Residential,Arlington Heights,60005,294900,3,2,1361,1,Garage,95,Yes,Yes,42.068416,-87.967639
+Single Family Residential,Arlington Heights,60004,775000,4,2.5,3770,7,Garage,94,No,No,42.10461,-87.954095
+Single Family Residential,Arlington Heights,60004,822162,4,3.5,3672,3,Garage,90,Yes,No,42.0991943,-87.966224
+Single Family Residential,Arlington Heights,60005,853155,4,2.5,4018,2,Garage,90,Yes,No,42.1285209,-87.851726
+Single Family Residential,Arlington Heights,60004,774675,4,2.5,3467,3,Garage,89,Yes,No,42.0991066,-87.965658
+Single Family Residential,Arlington Heights,60004,796895,4,2.5,3505,3,Garage,89,Yes,No,42.0991759,-87.966047
+Condo/Coop,Arlington Heights,60004,262000,2,2.5,1667,1,Garage,88,Yes,No,42.119247,-87.991335
+Single Family Residential,Arlington Heights,60004,820995,4,2,4018,2,Garage,87,No,No,42.0992981,-87.961688
+Single Family Residential,Arlington Heights,60004,800995,4,3,3672,3,Garage,87,No,No,42.0992981,-87.961688
+Single Family Residential,Arlington Heights,60004,760995,4,2,3467,3,Garage,87,No,No,42.0992981,-87.961688
+Condo/Coop,Arlington Heights,60005,309900,2,3,1789,1,Garage,87,Yes,No,42.078809,-87.981362
+Condo/Coop,Arlington Heights,60005,319900,2,2,1382,1,Garage,87,Yes,No,42.078809,-87.981362
+Condo/Coop,Arlington Heights,60004,125000,1,1,800,1,Garage,86,No,Yes,42.108852,-87.982092
+Single Family Residential,Arlington Heights,60004,299999,3,2,1629,2,Garage,80,Yes,Yes,42.1073,-88.001199
+Single Family Residential,Arlington Heights,60004,308500,4,2.5,2573,1,Garage,80,Yes,Yes,42.0756099,-87.95786
+Single Family Residential,Arlington Heights,60005,279500,3,2,1055,1,Garage,79,No,No,42.076893,-87.997194
+Single Family Residential,Arlington Heights,60004,899000,4,3.5,3739,3,Garage,79,No,No,42.11121,-87.989247
+Single Family Residential,Arlington Heights,60005,533900,4,2.5,2300,2,Garage,75,Yes,Yes,42.067128,-87.988306
+Single Family Residential,Arlington Heights,60004,329000,3,1.5,1768,2,Garage,73,Yes,Yes,42.148124,-87.99866
+Townhouse,Arlington Heights,60004,254000,2,1.5,2126,1,Garage,73,Yes,Yes,42.104576,-87.962221
+Single Family Residential,Arlington Heights,60004,350000,3,2,1814,2,Garage,73,No,Yes,42.074294,-87.958343
+Single Family Residential,Arlington Heights,60004,474900,4,2.5,2344,2,Garage,72,Yes,Yes,42.114808,-87.97719
+Single Family Residential,Arlington Heights,60005,699000,4,2.5,3400,2,Garage,71,No,No,42.0839632,-87.992668
+Townhouse,Arlington Heights,60004,269000,3,2,1700,3,Garage,71,Yes,Yes,42.1044993,-87.962028
+Single Family Residential,Arlington Heights,60004,400000,3,2,1900,2,Garage,70,Yes,No,42.091016,-87.980168
+Single Family Residential,Arlington Heights,60004,749000,4,3.5,3593,3,Garage,70,Yes,Yes,42.122282,-87.99727
+Single Family Residential,Arlington Heights,60004,469000,4,3,2077,4,Garage,70,Yes,No,42.086416,-87.972822
+Single Family Residential,Arlington Heights,60005,609900,5,3,3638,3,Garage,69,No,No,42.05669,-87.975269
+Single Family Residential,Arlington Heights,60005,249900,2,1,1381,1,Garage,64,No,Yes,42.070267,-87.980823
+Single Family Residential,Arlington Heights,60004,694900,5,3,4150,3,Garage,64,Yes,Yes,42.118256,-87.979886
+Single Family Residential,Arlington Heights,60005,539000,4,2.5,2808,2,Garage,64,Yes,Yes,42.055235,-87.976459
+Single Family Residential,Arlington Heights,60005,299000,3,1,1038,2,Garage,63,Yes,Yes,42.078472,-87.981365
+Single Family Residential,Arlington Heights,60004,525000,4,2.5,3657,3,Garage,62,No,No,42.119003,-87.966211
+Single Family Residential,Arlington Heights,60005,629000,4,4.5,4600,2,Garage,61,No,No,42.068024,-87.979882
+Single Family Residential,Arlington Heights,60004,610000,5,2.5,3600,2,Garage,60,Yes,No,42.14924,-87.990891
+Single Family Residential,Arlington Heights,60005,650000,5,4,3792,3,Garage,59,Yes,Yes,42.084634,-88.000895
+Single Family Residential,Arlington Heights,60005,475000,4,2.5,3400,2,Garage,59,Yes,No,42.07031,-87.992217
+Single Family Residential,Arlington Heights,60004,479000,4,2.5,2184,2,Garage,59,Yes,No,42.10043,-87.995335
+Single Family Residential,Arlington Heights,60005,359500,2,2,1400,1,Garage,59,Yes,Yes,42.068049,-87.984652
+Single Family Residential,Arlington Heights,60004,479900,4,3.5,4084,3,Garage,59,Yes,Yes,42.081127,-87.959516
+Single Family Residential,Arlington Heights,60004,419000,3,2.5,2209,2,Garage,59,Yes,No,42.133714,-87.967101
+Single Family Residential,Arlington Heights,60004,349500,4,1.5,1687,2,Garage,59,Yes,Yes,42.105493,-88.001031
+Single Family Residential,Arlington Heights,60004,715000,4,2.5,2802,2,Garage,57,Yes,Yes,42.092722,-87.987387
+Condo/Coop,Arlington Heights,60005,224900,2,2,1382,2,Garage,57,No,No,42.080412,-87.983497
+Single Family Residential,Arlington Heights,60005,349900,4,2.5,2437,2,Garage,57,Yes,Yes,42.050131,-87.976524
+Single Family Residential,Arlington Heights,60004,399900,4,2.5,1769,2,Garage,57,Yes,Yes,42.120989,-87.963103
+Townhouse,Arlington Heights,60004,599000,3,3.5,2684,2,Garage,56,No,Yes,42.076393,-87.964953
+Single Family Residential,Arlington Heights,60004,514000,4,2.5,2184,2,Garage,56,Yes,No,42.124774,-87.995045
+Condo/Coop,Arlington Heights,60005,729000,2,2,1382,2,Garage,56,Yes,Yes,42.083108,-87.984543
+Single Family Residential,Arlington Heights,60004,495000,4,2.5,1742,2,Garage,56,No,No,42.082629,-87.966191
+Single Family Residential,Arlington Heights,60004,514900,4,3,2757,2,Garage,53,Yes,Yes,42.107864,-87.960155
+Single Family Residential,Arlington Heights,60004,619000,4,3.5,3222,2,Garage,53,No,Yes,42.088473,-87.970347
+Condo/Coop,Arlington Heights,60005,189900,3,2,1629,2,None,52,No,No,42.0860111,-87.988856
+Townhouse,Arlington Heights,60005,247900,3,3,1600,2,Garage,51,No,Yes,42.0361791,-87.97181
+Single Family Residential,Arlington Heights,60004,424900,5,3,2552,2,Garage,51,Yes,No,42.115113,-87.974749
+Single Family Residential,Arlington Heights,60004,349000,3,3.5,2399,2,Garage,50,Yes,No,42.112528,-88.001793
+Single Family Residential,Arlington Heights,60005,329900,3,1,1176,1,Garage,50,No,Yes,42.069333,-87.988284
+Single Family Residential,Arlington Heights,60005,850000,5,4.5,4200,3,Garage,49,No,No,42.089251,-88.001416
+Single Family Residential,Arlington Heights,60004,334900,3,2,1629,2,Garage,46,No,No,42.094252,-88.003058
+Single Family Residential,Arlington Heights,60005,425000,4,2.5,2524,2,Garage,46,Yes,No,42.073133,-88.001187
+Single Family Residential,Arlington Heights,60004,525000,3,2,2548,3,Garage,45,Yes,Yes,42.105004,-88.003941
+Condo/Coop,Arlington Heights,60004,354000,2,2.5,2456,1,Garage,45,No,Yes,42.119247,-87.991335
+Single Family Residential,Arlington Heights,60004,949000,4,4.5,4021,2,Garage,45,No,Yes,42.091506,-87.96369
+Single Family Residential,Arlington Heights,60005,389000,4,2.5,2202,2,Garage,44,No,No,42.036766,-87.968033
+Single Family Residential,Arlington Heights,60004,324800,4,2.5,2184,1,Garage,44,Yes,Yes,42.1026355,-87.98444
+Single Family Residential,Arlington Heights,60004,530000,4,3.5,3256,3,Garage,43,Yes,No,42.099451,-87.964201
+Single Family Residential,Arlington Heights,60005,650000,5,5,4356,2,Garage,43,No,Yes,42.055709,-87.977016
+Single Family Residential,Arlington Heights,60004,398000,3,3.5,1960,2,Garage,43,No,Yes,42.1107402,-87.985491
+Single Family Residential,Arlington Heights,60004,574900,5,3,3800,2,Garage,42,Yes,No,42.126642,-87.978879
+Single Family Residential,Arlington Heights,60004,615000,4,3.5,2828,3,Garage,42,Yes,Yes,42.094286,-87.986181
+Single Family Residential,Arlington Heights,60004,829000,5,4.5,4466,2,Garage,40,Yes,No,42.127539,-87.974653
+Single Family Residential,Arlington Heights,60004,241900,2,1,1067,2,Garage,39,Yes,Yes,42.087975,-87.973315
+Condo/Coop,Arlington Heights,60005,129500,2,2,1300,1,None,38,No,No,42.074974,-87.967517
+Single Family Residential,Arlington Heights,60005,389900,3,3,2109,2,Garage,37,Yes,Yes,42.0681136,-87.970545
+Single Family Residential,Arlington Heights,60004,519000,5,3,3330,2,Garage,37,Yes,No,42.15266,-87.991702
+Single Family Residential,Arlington Heights,60004,249900,2,2,1382,1,Garage,37,No,No,42.106755,-87.977282
+Single Family Residential,Arlington Heights,60004,625000,4,2.5,3110,3,Garage,37,Yes,Yes,42.089891,-87.988494
+Single Family Residential,Arlington Heights,60004,379900,3,2.5,1960,2,Garage,36,Yes,Yes,42.113651,-87.985255
+Single Family Residential,Arlington Heights,60005,474000,2,2.5,1744,2,Garage,36,Yes,Yes,42.073051,-87.975347
+Multi-Family,Arlington Heights,60005,398000,4,2,1920,2,Garage,36,No,No,42.084043,-87.989608
+Single Family Residential,Arlington Heights,60004,534000,4,2.5,2300,2,Garage,36,Yes,No,42.101192,-87.96964
+Single Family Residential,Arlington Heights,60005,475000,4,2.5,2805,2,Garage,35,Yes,Yes,42.058453,-87.982703
+Condo/Coop,Arlington Heights,60004,139900,2,1,900,1,None,35,Yes,Yes,42.084058,-87.972946
+Single Family Residential,Arlington Heights,60004,339000,3,2.5,1609,4,Garage,35,Yes,Yes,42.128687,-87.976605
+Single Family Residential,Arlington Heights,60005,499000,4,3.5,2501,2,Garage,35,Yes,Yes,42.063191,-87.992271
+Condo/Coop,Arlington Heights,60004,224900,3,2,1650,1,Garage,35,Yes,Yes,42.1109628,-87.950888
+Single Family Residential,Arlington Heights,60005,579000,4,3.5,3027,2,Garage,35,Yes,No,42.062769,-87.992243
+Single Family Residential,Arlington Heights,60004,345000,3,2,1278,2,Garage,32,Yes,No,42.078367,-87.9554
+Single Family Residential,Arlington Heights,60005,525000,3,3,2110,1,Garage,32,Yes,Yes,42.076949,-87.978471
+Single Family Residential,Arlington Heights,60005,1084000,5,3.5,4500,3,Garage,32,No,No,42.075301,-87.97454
+Condo/Coop,Arlington Heights,60005,119900,2,1,1067,2,None,31,No,Yes,42.037705,-87.968176
+Single Family Residential,Arlington Heights,60004,437000,4,3.5,2447,2,Garage,30,Yes,Yes,42.13347,-87.970919
+Single Family Residential,Arlington Heights,60005,699000,3,2,1629,2,Garage,30,No,No,42.067536,-87.978904
+Single Family Residential,Arlington Heights,60004,739900,4,3.5,3000,2,Garage,30,Yes,Yes,42.094726,-88.001388
+Single Family Residential,Arlington Heights,60004,309900,3,1.5,1811,2,Garage,30,No,No,42.137287,-87.963212
+Single Family Residential,Arlington Heights,60004,719900,5,3.5,4045,2,Garage,29,No,Yes,42.124206,-87.972383
+Single Family Residential,Arlington Heights,60004,439000,5,2.5,2409,3,Garage,29,Yes,No,42.151668,-87.990235
+Single Family Residential,Arlington Heights,60004,339000,3,2,1360,2,Garage,29,Yes,Yes,42.133498,-87.968237
+Single Family Residential,Arlington Heights,60004,799500,4,3.5,3100,2,Garage,29,No,No,42.093972,-87.973996
+Single Family Residential,Arlington Heights,60004,490000,5,2.5,2582,2,Garage,29,No,No,42.100516,-87.986884
+Single Family Residential,Arlington Heights,60005,329900,3,1.5,1505,5,Garage,29,No,Yes,42.081886,-87.990577
+Townhouse,Arlington Heights,60004,298000,3,2.5,2800,2,Garage,28,Yes,Yes,42.123509,-87.994188
+Single Family Residential,Arlington Heights,60005,519900,4,2.5,2290,1,Garage,28,Yes,Yes,42.076102,-87.973644
+Townhouse,Arlington Heights,60004,299899,3,2.5,1785,1,Garage,28,No,Yes,42.081556,-87.948224
+Single Family Residential,Arlington Heights,60004,425000,3,2.5,1853,2,Garage,28,No,Yes,42.092835,-87.97204
+Single Family Residential,Arlington Heights,60004,279000,2,2,1200,2,Garage,28,No,Yes,42.098376,-87.988592
+Townhouse,Arlington Heights,60005,224900,3,2,1650,2,Garage,28,No,Yes,42.0397898,-87.971944
+Single Family Residential,Arlington Heights,60004,669900,4,4.5,3239,2,Garage,27,Yes,Yes,42.080178,-87.960252
+Single Family Residential,Arlington Heights,60005,479000,4,3,2131,2,Garage,27,Yes,No,42.06219,-87.983936
+Single Family Residential,Arlington Heights,60004,399900,4,2.5,2600,2,Garage,27,Yes,Yes,42.122093,-87.989286
+Condo/Coop,Arlington Heights,60005,159900,2,2,1100,1,None,27,No,Yes,42.084398,-87.986205
+Single Family Residential,Arlington Heights,60004,425000,4,2.5,2300,2,Garage,24,Yes,No,42.135663,-87.967998
+Single Family Residential,Arlington Heights,60004,1095000,4,3.5,4208,2,Garage,24,Yes,Yes,42.097762,-88.000222
+Condo/Coop,Arlington Heights,60005,129000,2,2,1000,1,None,23,No,Yes,42.053618,-87.982681
+Single Family Residential,Arlington Heights,60005,425000,4,2.5,2310,2,Garage,23,No,Yes,42.061677,-87.991067
+Single Family Residential,Arlington Heights,60005,450000,3,1,1083,1,Garage,23,No,Yes,42.075369,-87.987481
+Condo/Coop,Arlington Heights,60004,149900,2,2,1382,2,None,23,No,Yes,42.135685,-87.97185
+Single Family Residential,Arlington Heights,60004,374925,3,2.5,1700,2,Garage,23,No,Yes,42.117253,-87.995907
+Single Family Residential,Arlington Heights,60005,880000,3,3.5,3771,2,Garage,23,No,No,42.069437,-87.97817
+Single Family Residential,Arlington Heights,60005,412900,4,4,2450,2,Garage,22,Yes,Yes,42.055333,-87.985816
+Single Family Residential,Arlington Heights,60004,449900,4,2.5,2231,2,Garage,22,No,Yes,42.131922,-87.965811
+Single Family Residential,Arlington Heights,60004,439000,3,3,2514,2,Garage,22,No,No,42.123362,-87.960208
+Condo/Coop,Arlington Heights,60005,139900,1,1,906,0,None,22,No,Yes,42.0646932,-87.964752
+Townhouse,Arlington Heights,60005,285000,3,2.5,1500,2,Garage,22,No,No,42.068254,-88.001839
+Single Family Residential,Arlington Heights,60004,334900,3,1.5,1456,1,Garage,22,No,Yes,42.093975,-88.00306
+Condo/Coop,Arlington Heights,60005,139900,2,2,1382,1,None,22,No,No,42.074974,-87.967517
+Single Family Residential,Arlington Heights,60005,820995,4,2.5,4018,2,Garage,22,No,No,42.0993643,-87.966298
+Single Family Residential,Arlington Heights,60004,339900,3,2.5,1428,2,Garage,22,No,No,42.118208,-87.994797
+Single Family Residential,Arlington Heights,60004,760995,4,2.5,3467,3,Garage,22,No,No,42.0994104,-87.966442
+Single Family Residential,Arlington Heights,60004,800995,4,3.5,3672,3,Garage,22,No,No,42.0993746,-87.966581
+Single Family Residential,Arlington Heights,60004,325000,4,2,1880,1,Garage,21,Yes,No,42.09683,-88.002466
+Single Family Residential,Arlington Heights,60005,1299000,4,4,5800,4,Garage,21,No,Yes,42.067469,-87.977404
+Single Family Residential,Arlington Heights,60005,335000,3,2.5,1642,2,Garage,21,No,No,42.059476,-87.992629
+Townhouse,Arlington Heights,60004,304900,2,2.5,1725,2,Garage,21,No,No,42.1095485,-87.964149
+Single Family Residential,Arlington Heights,60005,499900,3,2.5,2332,2,Garage,21,No,Yes,42.075393,-87.978476
+Single Family Residential,Arlington Heights,60004,549900,4,3,2603,2,Garage,20,No,Yes,42.097005,-87.979561
+Single Family Residential,Arlington Heights,60004,410000,4,2.5,2040,2,Garage,18,No,No,42.120109,-87.960698
+Single Family Residential,Arlington Heights,60004,429000,4,2.5,2380,2,Garage,18,No,No,42.117192,-88.003268
+Single Family Residential,Arlington Heights,60004,724900,4,2.5,2834,3,Garage,18,No,Yes,42.089443,-87.993003
+Condo/Coop,Arlington Heights,60005,525000,2,2.5,1800,2,Garage,18,No,No,42.083475,-87.985651
+Single Family Residential,Arlington Heights,60005,324900,3,2,1253,1,Garage,18,No,Yes,42.069022,-87.983428
+Single Family Residential,Arlington Heights,60005,395000,3,2,1900,2,Garage,18,No,No,42.052575,-87.98683
+Single Family Residential,Arlington Heights,60004,269900,3,1.5,1431,1,Garage,18,No,Yes,42.12659,-87.992778
+Single Family Residential,Arlington Heights,60005,449000,3,2,2000,2,Garage,17,No,Yes,42.033428,-87.968892
+Single Family Residential,Arlington Heights,60005,379900,3,2,1100,1,Garage,16,No,Yes,42.071864,-87.988246
+Single Family Residential,Arlington Heights,60004,384900,3,2,1629,1,Garage,15,No,Yes,42.085261,-87.973554
+Townhouse,Arlington Heights,60004,249900,3,2,1500,2,Garage,15,No,No,42.142402,-87.992735
+Single Family Residential,Arlington Heights,60004,769000,4,3.5,3428,2,Garage,15,No,Yes,42.091948,-87.984966
+Townhouse,Arlington Heights,60004,589900,3,2.5,2589,2,Garage,15,No,Yes,42.076177,-87.964481
+Single Family Residential,Arlington Heights,60005,424925,4,2,1819,1,Garage,15,No,No,42.077945,-88.003212
+Townhouse,Arlington Heights,60004,259900,3,2,1629,2,Garage,15,No,Yes,42.1117746,-87.948001
+Single Family Residential,Arlington Heights,60004,414000,3,2,1224,2,Garage,14,No,Yes,42.113264,-87.963891
+Single Family Residential,Arlington Heights,60005,574900,4,2.5,2876,2,Garage,14,No,No,42.064537,-87.988898
+Single Family Residential,Arlington Heights,60004,785000,4,4.5,3460,2,Garage,14,No,No,42.091209,-87.982539
+Single Family Residential,Arlington Heights,60004,474900,4,2,1776,1,Garage,14,No,No,42.095092,-87.978401
+Single Family Residential,Arlington Heights,60004,399900,3,2,1400,2,Garage,14,No,Yes,42.094093,-87.983251
+Condo/Coop,Arlington Heights,60005,189900,2,2,1310,4,None,14,No,Yes,42.0640466,-87.964756
+Single Family Residential,Arlington Heights,60004,459900,4,2.5,2307,2,Garage,14,No,Yes,42.111382,-87.999976
+Single Family Residential,Arlington Heights,60004,990000,4,4.5,4995,9,Garage,13,No,No,42.121768,-87.955547
+Single Family Residential,Arlington Heights,60004,549900,5,3,3008,2,Garage,13,No,Yes,42.151915,-87.987758
+Condo/Coop,Arlington Heights,60005,119900,1,1,800,1,None,11,No,Yes,42.09236,-88.003428
+Single Family Residential,Arlington Heights,60004,639900,4,3,3046,2,Garage,11,No,Yes,42.088017,-87.984934
+Townhouse,Arlington Heights,60004,255000,3,2,1400,2,Garage,11,No,Yes,42.111073,-87.947357
+Condo/Coop,Arlington Heights,60005,299900,2,2,1300,1,Garage,11,No,Yes,42.082597,-87.98513
+Single Family Residential,Arlington Heights,60004,469900,4,3,2870,2,Garage,11,No,Yes,42.115185,-87.966791
+Single Family Residential,Arlington Heights,60004,569000,4,2.5,2300,2,Garage,11,No,Yes,42.099393,-87.971751
+Single Family Residential,Arlington Heights,60004,385000,3,2.5,1457,2,Garage,11,No,Yes,42.111655,-87.962956
+Single Family Residential,Arlington Heights,60004,349900,3,2,1420,1,Garage,10,Yes,Yes,42.094788,-87.975952
+Single Family Residential,Arlington Heights,60004,749900,4,2.5,3000,2,Garage,10,No,Yes,42.091884,-87.997124
+Single Family Residential,Arlington Heights,60004,524900,4,3.5,2900,2,Garage,10,No,Yes,42.112022,-87.955902
+Single Family Residential,Arlington Heights,60004,759000,3,2.5,2850,2,Garage,10,No,Yes,42.089549,-87.977174
+Condo/Coop,Arlington Heights,60005,135900,2,2,1300,1,None,10,No,Yes,42.074974,-87.967517
+Single Family Residential,Arlington Heights,60004,549000,4,2.5,2888,2,Garage,9,No,No,42.084059,-87.960677
+Single Family Residential,Arlington Heights,60005,874900,5,4.5,3654,2,Garage,9,No,No,42.084033,-87.994721
+Townhouse,Arlington Heights,60004,224900,2,2,1700,1,Garage,9,No,No,42.106755,-87.977282
+Single Family Residential,Arlington Heights,60004,539900,4,3.5,2700,2,Garage,9,No,Yes,42.107652,-87.958289
+Townhouse,Arlington Heights,60005,189900,2,1.5,1100,1,Garage,9,No,Yes,42.059795,-88.006016
+Single Family Residential,Arlington Heights,60004,374999,3,1.5,1560,2,Garage,9,No,Yes,42.076247,-87.961939
+Single Family Residential,Arlington Heights,60004,449925,3,3,1648,1,Garage,9,No,Yes,42.09969,-87.986161
+Townhouse,Arlington Heights,60004,229900,2,1.5,1214,1,Garage,9,No,Yes,42.149041,-88.002648
+Single Family Residential,Arlington Heights,60004,219900,3,1,1097,2,Garage,8,No,No,42.102453,-88.004218
+Single Family Residential,Arlington Heights,60004,485000,3,2.5,2311,2,Garage,8,No,Yes,42.112841,-87.95592
+Single Family Residential,Arlington Heights,60004,415000,4,2.5,1696,2,Garage,8,No,No,42.128364,-87.981674
+Single Family Residential,Arlington Heights,60004,899925,4,4,3900,3,Garage,8,No,No,42.106039,-87.987904
+Single Family Residential,Arlington Heights,60005,279900,3,1.5,1019,2,Garage,8,No,No,42.072101,-87.985068
+Single Family Residential,Arlington Heights,60004,695000,4,3.5,2520,2,Garage,8,No,Yes,42.096209,-87.995897
+Townhouse,Arlington Heights,60004,180000,3,2,1629,1,Garage,8,No,No,42.152129,-88.000193
+Single Family Residential,Arlington Heights,60004,319900,3,1.5,1644,1,Garage,8,No,No,42.080348,-87.958306
+Townhouse,Arlington Heights,60005,259900,2,2,1382,2,Garage,8,No,No,42.068254,-88.001839
+Single Family Residential,Arlington Heights,60004,649900,4,2.5,3387,2,Garage,8,No,No,42.104351,-87.975209
+Condo/Coop,Arlington Heights,60005,129000,2,1,1000,2,None,8,No,Yes,42.045057,-87.978497
+Condo/Coop,Arlington Heights,60005,99000,1,1,700,2,None,8,No,Yes,42.045491,-87.976016
+Single Family Residential,Arlington Heights,60005,375000,3,2,1800,2,Garage,8,No,Yes,42.082337,-88.00018
+Single Family Residential,Arlington Heights,60004,429900,4,2.5,1918,2,Garage,7,No,No,42.109017,-87.952743
+Single Family Residential,Arlington Heights,60004,420000,3,2,1341,2,Garage,7,No,Yes,42.078549,-87.955398
+Single Family Residential,Arlington Heights,60004,629000,6,4,3500,2,Garage,7,No,Yes,42.114434,-87.979801
+Single Family Residential,Arlington Heights,60004,339000,2,2,1382,1,Garage,7,No,Yes,42.088523,-87.973202
+Townhouse,Arlington Heights,60004,305000,3,3.5,1900,2,Garage,4,No,Yes,42.123611,-87.999497
+Single Family Residential,Arlington Heights,60004,395900,4,2.5,2448,2,Garage,4,No,Yes,42.11991,-87.960252
+Single Family Residential,Arlington Heights,60004,375000,4,2.5,2184,2,Garage,4,No,No,42.113978,-87.998755
+Single Family Residential,Arlington Heights,60004,264900,3,2,1081,2,Garage,4,No,Yes,42.148737,-88.008455
+Condo/Coop,Arlington Heights,60005,239000,2,2,1100,1,None,4,No,No,42.083257,-87.986178
+Single Family Residential,Arlington Heights,60004,368500,3,2.5,1950,2,Garage,4,No,No,42.148858,-87.997982
+Condo/Coop,Arlington Heights,60005,159900,2,2,1270,2,Garage,3,No,Yes,42.064876,-87.991809
+Single Family Residential,Arlington Heights,60004,434925,4,3,2392,2,Garage,3,No,No,42.075609,-87.957126
+Single Family Residential,Arlington Heights,60005,665000,4,4.5,3600,3,Garage,3,No,Yes,42.07296,-88.002777
+Condo/Coop,Arlington Heights,60004,83900,1,1,906,1,None,2,No,No,42.097377,-87.953468
+Townhouse,Arlington Heights,60004,199000,2,2,1250,1,Garage,2,No,Yes,42.133341,-87.972353
+Condo/Coop,Arlington Heights,60004,149900,2,1.5,1200,1,None,2,No,Yes,42.108852,-87.982092
+Single Family Residential,Arlington Heights,60004,309900,3,1.5,1418,2,Garage,2,No,No,42.09245,-87.971253
+Single Family Residential,Arlington Heights,60004,249900,2,2,1382,1,Garage,2,No,No,42.106755,-87.977282
+Condo/Coop,Arlington Heights,60004,137500,2,2,1382,1,None,2,No,Yes,42.104446,-87.964633
+Single Family Residential,Arlington Heights,60005,324900,2,2,1382,1,Garage,2,No,Yes,42.072634,-87.984579
+Townhouse,Arlington Heights,60004,211900,2,2,1172,2,None,2,No,Yes,42.1055426,-87.979978
+Condo/Coop,Arlington Heights,60004,125000,2,1.5,1100,2,None,1,No,No,42.0985641,-87.955233
+Single Family Residential,Arlington Heights,60004,524900,4,2.5,2704,2,Garage,1,No,No,42.107807,-87.954638
+Single Family Residential,Arlington Heights,60004,349900,4,2,1113,2,Garage,1,No,Yes,42.120063,-87.996598
+Single Family Residential,Arlington Heights,60004,589000,4,2.5,3000,2,Garage,1,No,No,42.105138,-87.951473
+Single Family Residential,Arlington Heights,60004,455000,4,2.5,2630,2,Garage,1,No,No,42.099338,-87.978355
+Single Family Residential,Arlington Heights,60004,364900,3,2.5,1600,2,Garage,1,No,No,42.129535,-87.973173
+Single Family Residential,Arlington Heights,60004,359000,3,2,1450,2,Garage,1,No,No,42.086335,-87.967961
+Single Family Residential,Arlington Heights,60005,315000,3,2,1629,2,Garage,1,No,Yes,42.085106,-88.002032
+Multi-Family,Chicago,60641,350000,5,2,2263,2,Garage,144,No,Yes,41.934898,-87.748993
+Condo/Coop,Chicago,60634,99900,2,1,1067,0,None,255,No,Yes,41.9350142,-87.767292
+Single Family Residential,Chicago,60639,237500,3,1,1400,2,Garage,252,Yes,No,41.925777,-87.751098
+Single Family Residential,Chicago,60639,254900,3,2,1800,2,Garage,161,Yes,No,41.929843,-87.757499
+Multi-Family,Chicago,60641,1250000,5,3,14331,2,None,70,No,No,41.933355,-87.756851
+Condo/Coop,Chicago,60641,54900,1,1,650,0,None,57,No,No,41.9345815,-87.756825
+Single Family Residential,Chicago,60634,250000,4,3,1865,1,Garage,60,No,Yes,41.933526,-87.786116
+Single Family Residential,Chicago,60639,318000,4,2,1803,2,Garage,58,No,Yes,41.924405,-87.777286
+Multi-Family,Chicago,60639,149500,5,2.5,2575,2,Garage,56,No,Yes,41.922122,-87.759434
+Single Family Residential,Chicago,60639,350000,4,2,1920,0,None,256,No,Yes,41.926279,-87.752586
+Single Family Residential,Chicago,60639,299000,3,2,1629,0,None,376,No,No,41.929426,-87.749774
+Single Family Residential,Chicago,60639,160000,3,1.5,1431,1,None,256,No,Yes,41.9297306,-87.743175
+Single Family Residential,Chicago,60639,450000,6,3,3453,1,None,256,No,Yes,41.919272,-87.78373
+Condo/Coop,Chicago,60634,154900,2,2,1000,1,None,2,No,Yes,41.9380211,-87.789871
+Single Family Residential,Chicago,60639,249000,4,2.5,1800,2,Garage,7,No,Yes,41.927547,-87.754364
+Single Family Residential,Chicago,60639,234900,3,2,1629,2,Garage,57,No,No,41.92171,-87.773544
+Single Family Residential,Chicago,60634,245000,3,1.5,1069,2,Garage,11,No,No,41.932039,-87.786066
+Single Family Residential,Chicago,60634,349900,3,2.5,1500,2,Garage,14,No,Yes,41.9367734,-87.779471
+Multi-Family,Chicago,60641,359900,5,3,2930,2,Garage,70,No,No,41.933483,-87.757662
+Multi-Family,Chicago,60639,525000,3,3,3298,8,None,16,No,No,41.927374,-87.756618
+Single Family Residential,Chicago,60634,379000,4,2,1920,3,Garage,87,Yes,No,41.936308,-87.780621
+Single Family Residential,Chicago,60639,134500,4,2,1641,2,Garage,108,Yes,Yes,41.9216,-87.766236
+Single Family Residential,Chicago,60641,201900,4,3,2485,2,Garage,21,No,Yes,41.9361813,-87.760115
+Multi-Family,Chicago,60639,353000,5,3,2930,3,None,99,Yes,No,41.923421,-87.783502
+Single Family Residential,Chicago,60634,119600,4,2,943,3,Garage,16,No,Yes,41.9322578,-87.773341
+Single Family Residential,Chicago,60641,205000,2,2,1133,2,Garage,187,No,No,41.933561,-87.762284
+Single Family Residential,Chicago,60641,268500,5,3,1015,2,Garage,38,No,No,41.93795,-87.762445
+Single Family Residential,Chicago,60641,343500,5,3,1767,2,Garage,66,No,No,41.93371,-87.761063
+Single Family Residential,Chicago,60641,275000,4,3,2485,2,Garage,97,No,No,41.935257,-87.76106
+Single Family Residential,Chicago,60639,339900,4,3,1500,2,Garage,56,No,Yes,41.9302748,-87.769613
+Single Family Residential,Chicago,60639,299999,3,3,1300,2,Garage,9,No,Yes,41.926472,-87.762747
+Single Family Residential,Chicago,60634,229000,4,3,1830,3,Garage,10,No,Yes,41.935449,-87.772106
+Single Family Residential,Chicago,60639,124800,4,2,1920,2,Garage,7,No,Yes,41.927023,-87.77251
+Multi-Family,Chicago,60641,380000,6,4,4470,2,Garage,7,No,No,41.934754,-87.759723
+Single Family Residential,Chicago,60634,350000,3,3,1300,1,Garage,13,Yes,Yes,41.933698,-87.780559
+Single Family Residential,Chicago,60634,339900,3,1.5,1943,2,Garage,4,No,No,41.934028,-87.780568
+Single Family Residential,Chicago,60634,269900,5,3,2000,2,Garage,3,No,Yes,41.933451,-87.76908
+Single Family Residential,Chicago,60641,250900,4,2,1567,2,Garage,3,No,Yes,41.933836,-87.760067
+Single Family Residential,Chicago,60639,179900,2,1,899,2,Garage,3,No,No,41.9304578,-87.774496
+Single Family Residential,Chicago,60634,347700,3,3,1600,0,None,16,No,Yes,41.933823,-87.77205
+Single Family Residential,Chicago,60639,229900,3,1,1092,2,Garage,28,No,No,41.922909,-87.780888
+Multi-Family,Chicago,60639,228000,4,3,2485,2,Garage,2,No,Yes,41.926824,-87.76205
+Single Family Residential,Chicago,60639,264900,3,2,1200,2,Garage,17,Yes,Yes,41.9287221,-87.778545
+Single Family Residential,Chicago,60639,250000,5,2,1469,2,Garage,79,Yes,No,41.920578,-87.785689
+Single Family Residential,Chicago,60639,305900,5,3,2930,2,Garage,18,Yes,Yes,41.92073,-87.781344
+Single Family Residential,Chicago,60641,384900,3,3.5,2900,2,Garage,9,No,Yes,41.9349544,-87.750359
+Multi-Family,Chicago,60641,439000,8,4,6211,2,Garage,9,No,Yes,41.933612,-87.747637
+Single Family Residential,Chicago,60639,218000,4,2,1920,1,Garage,3,No,Yes,41.927002,-87.743596
+Single Family Residential,Chicago,60639,200000,4,1,1110,2,Garage,20,Yes,Yes,41.928537,-87.748207
+Single Family Residential,Chicago,60641,279000,3,2,1650,2,Garage,3,No,Yes,41.93722,-87.751018
+Single Family Residential,Chicago,60634,245000,3,2,3720,2,Garage,6,No,No,41.9317384,-87.783505
+Multi-Family,Chicago,60639,2000000,2,2,1500,3,Garage,3,No,No,41.9317149,-87.753337
+Multi-Family,Chicago,60639,224900,4,2,1920,2,Garage,401,Yes,Yes,41.9253514,-87.759659
+Single Family Residential,Chicago,60641,219000,2,2,1766,1,Garage,24,No,Yes,41.932988,-87.755532
+Single Family Residential,Chicago,60639,117000,3,2,1629,0,None,16,No,Yes,41.929764,-87.762921
+Condo/Coop,Chicago,60634,189950,2,2,1365,1,Garage,21,Yes,No,41.9319702,-87.79018
+Condo/Coop,Chicago,60707,190000,2,2,1382,1,None,74,Yes,Yes,41.9314286,-87.790245
+Single Family Residential,Chicago,60634,365000,4,3,2485,2,Garage,230,Yes,No,41.935043,-87.777544
+Multi-Family,Chicago,60641,539000,4,3,4840,0,None,36,No,No,41.9332418,-87.7642
+Multi-Family,Chicago,60639,599999,5,5,8000,2,Garage,42,No,Yes,41.931779,-87.748691
+Multi-Family,Chicago,60639,525000,10,5,3859,2,Garage,17,No,No,41.930761,-87.78428
+Single Family Residential,Chicago,60634,259000,3,2,1190,2,Garage,13,No,No,41.936138,-87.79038
+Single Family Residential,Chicago,60634,144900,3,2,960,1,None,81,Yes,Yes,41.932517,-87.768356
+Single Family Residential,Chicago,60639,229900,4,3,2400,2,Garage,23,No,Yes,41.9306231,-87.761515
+Multi-Family,Chicago,60639,449900,8,4,6211,2,Garage,18,No,No,41.928361,-87.760937
+Multi-Family,Chicago,60634,215000,5,3,2930,2,Garage,136,No,Yes,41.9322047,-87.779852
+Multi-Family,Chicago,60639,119500,7,3,4070,2,Garage,171,No,Yes,41.918068,-87.74574
+Single Family Residential,Chicago,60707,187000,3,2,1472,3,Garage,173,No,No,41.92018,-87.786904
+Single Family Residential,Chicago,60639,199000,2,1.5,2166,1,Garage,45,No,Yes,41.9181732,-87.745604
+Multi-Family,Chicago,60639,244000,4,2,1920,2,Garage,35,No,No,41.917193,-87.78558
+Single Family Residential,Chicago,60639,64900,2,1,1067,0,None,81,Yes,Yes,41.921613,-87.766756
+Single Family Residential,Chicago,60639,77900,3,1,1350,0,None,20,No,Yes,41.921063,-87.78205
+Single Family Residential,Chicago,60639,275000,3,2.5,1700,2,Garage,20,No,No,41.91535,-87.747535
+Multi-Family,Chicago,60639,265000,4,3,2485,2,Garage,32,No,No,41.924335,-87.760727
+Condo/Coop,Chicago,60639,149000,3,2,992,0,None,29,No,Yes,41.924831,-87.753961
+Multi-Family,Chicago,60641,309000,7,3,4070,2,Garage,28,No,Yes,41.935596,-87.744627
+Multi-Family,Chicago,60639,139900,5,3,2930,2,Garage,70,Yes,Yes,41.926135,-87.762026
+Single Family Residential,Chicago,60634,199500,2,1,500,0,None,38,No,No,41.936318,-87.779809
+Multi-Family,Chicago,60639,239900,5,3,2930,2,Garage,37,No,Yes,41.9265357,-87.763879
+Multi-Family,Chicago,60639,339500,6,3,3453,2,Garage,36,No,Yes,41.9290316,-87.780492
+Single Family Residential,Chicago,60707,210000,3,1,1258,2,Garage,7,No,No,41.92066,-87.786213
+Single Family Residential,Chicago,60641,420000,3,3,2400,2,Garage,49,No,Yes,41.938064,-87.756493
+Multi-Family,Chicago,60639,329900,5,3,2930,2,Garage,163,Yes,No,41.924815,-87.755035
+Single Family Residential,Chicago,60634,324900,3,2.5,2244,5,Garage,1,No,Yes,41.9367054,-87.783837
+Multi-Family,Chicago,60639,84900,5,2,2263,2,Garage,35,No,Yes,41.91814,-87.742171
+Multi-Family,Chicago,60639,147000,3,2,1629,2,Garage,122,No,Yes,41.9209582,-87.742799
+Multi-Family,Chicago,60641,449900,7,3,4070,2,Garage,1,No,Yes,41.9353526,-87.754729
+Single Family Residential,Chicago,60639,229900,4,1.5,1418,2,Garage,1,No,Yes,41.928301,-87.773767
+Single Family Residential,Chicago,60634,298900,5,3,2930,2,Garage,73,Yes,Yes,41.93726,-87.777731
+Single Family Residential,Chicago,60639,219000,3,3,801,2,Garage,76,No,Yes,41.926104,-87.776642
+Single Family Residential,Des Plaines,60018,183000,3,1,864,6,Garage,386,Yes,Yes,42.013674,-87.878583
+Condo/Coop,Des Plaines,60016,168000,2,2,1344,2,Garage,296,Yes,Yes,42.0399947,-87.883111
+Single Family Residential,Des Plaines,60016,385500,4,4,1765,1,Garage,295,Yes,No,42.058769,-87.915983
+Townhouse,Des Plaines,60016,120000,3,1.5,1225,1,None,291,No,No,42.041269,-87.85402
+Single Family Residential,Des Plaines,60018,244000,2,2,1000,1,Garage,288,No,Yes,42.030042,-87.886728
+Condo/Coop,Des Plaines,60016,76900,1,1,800,1,None,278,Yes,Yes,42.044676,-87.893113
+Single Family Residential,Des Plaines,60016,149000,2,1,1067,2,Garage,277,Yes,Yes,42.040877,-87.900577
+Condo/Coop,Des Plaines,60016,99000,1,1,906,2,None,259,Yes,Yes,42.035094,-87.939312
+Single Family Residential,Des Plaines,60016,385000,3,3.5,2600,0,None,256,No,No,42.040183,-87.896308
+Single Family Residential,Des Plaines,60016,245900,2,2,1382,0,None,256,No,No,42.041437,-87.881876
+Single Family Residential,Des Plaines,60016,269900,2,1.5,1214,0,None,256,No,No,42.045927,-87.912452
+Condo/Coop,Des Plaines,60016,195000,2,1.5,1214,1,None,256,No,Yes,42.039814,-87.854265
+Condo/Coop,Des Plaines,60016,230000,2,1.5,1214,0,None,256,No,Yes,42.045475,-87.894883
+Condo/Coop,Des Plaines,60016,235000,1,1,927,1,None,256,No,Yes,42.0420639,-87.886205
+Condo/Coop,Des Plaines,60016,99000,2,1,1067,0,None,256,No,No,42.0418,-87.8962
+Single Family Residential,Des Plaines,60016,259000,3,1.5,1250,2,Garage,228,No,Yes,42.03352,-87.904476
+Single Family Residential,Des Plaines,60016,439900,4,2.5,2310,2,Garage,225,Yes,Yes,42.063807,-87.914101
+Condo/Coop,Des Plaines,60016,66901,1,1,900,2,None,222,Yes,Yes,42.042303,-87.854804
+Single Family Residential,Des Plaines,60016,795000,5,3.5,3746,3,Garage,218,No,Yes,42.0552733,-87.865033
+Single Family Residential,Des Plaines,60018,298500,4,2,1544,2,Garage,211,Yes,No,42.02496,-87.890429
+Single Family Residential,Des Plaines,60016,254900,3,1.5,1273,5,Garage,196,No,No,42.042456,-87.917149
+Single Family Residential,Des Plaines,60016,224500,3,2,1437,1,Garage,189,Yes,No,42.046119,-87.891239
+Single Family Residential,Des Plaines,60016,239900,3,2.5,1900,2,Garage,186,No,Yes,42.034863,-87.894904
+Condo/Coop,Des Plaines,60016,285500,2,2,1703,1,Garage,177,Yes,No,42.037779,-87.892208
+Condo/Coop,Des Plaines,60016,205000,2,1.5,1371,1,Garage,172,Yes,No,42.04406,-87.887366
+Single Family Residential,Des Plaines,60016,429900,3,2,2042,2,Garage,165,Yes,No,42.0348474,-87.871703
+Condo/Coop,Des Plaines,60016,147900,2,2,1340,1,Garage,162,Yes,Yes,42.043406,-87.88904
+Condo/Coop,Des Plaines,60016,117500,1,1,906,1,None,148,Yes,Yes,42.036211,-87.883748
+Single Family Residential,Des Plaines,60016,249900,3,1.5,1100,2,Garage,118,Yes,Yes,42.042251,-87.90498
+Single Family Residential,Des Plaines,60016,479900,4,2.5,2675,2,Garage,113,Yes,No,42.070519,-87.906576
+Condo/Coop,Des Plaines,60016,249900,3,2,1555,1,Garage,113,No,No,42.037272,-87.892616
+Townhouse,Des Plaines,60016,174500,2,1.5,1140,0,None,113,Yes,Yes,42.041322,-87.852867
+Single Family Residential,Des Plaines,60018,114900,4,1,1483,2,Garage,108,Yes,Yes,42.0278494,-87.87864
+Single Family Residential,Des Plaines,60018,479900,5,3,2700,3,Garage,104,Yes,No,42.0097661,-87.900029
+Single Family Residential,Des Plaines,60016,554000,5,3.5,3576,3,Garage,101,Yes,Yes,42.036259,-87.917795
+Condo/Coop,Des Plaines,60016,157500,2,2,1382,1,None,99,Yes,Yes,42.038261,-87.886954
+Condo/Coop,Des Plaines,60016,107000,1,1,900,1,None,95,No,No,42.04209,-87.857788
+Single Family Residential,Des Plaines,60018,599000,5,5,4670,3,Garage,93,Yes,No,42.026196,-87.91031
+Single Family Residential,Des Plaines,60016,248500,3,1.5,1100,2,Garage,92,No,Yes,42.031106,-87.90628
+Single Family Residential,Des Plaines,60016,435000,4,2.5,2682,2,Garage,90,No,Yes,42.035896,-87.929941
+Single Family Residential,Des Plaines,60016,239900,4,2,1666,2,None,90,Yes,No,42.06188,-87.906143
+Townhouse,Des Plaines,60016,272000,3,2.5,1721,2,Garage,85,No,No,42.0506689,-87.906601
+Condo/Coop,Des Plaines,60016,225000,2,2,1365,1,Garage,85,Yes,Yes,42.0396397,-87.886759
+Single Family Residential,Des Plaines,60016,225000,3,1.5,1431,1,Garage,84,Yes,Yes,42.035747,-87.883952
+Condo/Coop,Des Plaines,60016,152000,2,2,1275,1,Garage,81,Yes,Yes,42.0399947,-87.883111
+Single Family Residential,Des Plaines,60016,259000,3,1.5,1478,2,Garage,77,Yes,Yes,42.031623,-87.890866
+Condo/Coop,Des Plaines,60016,209900,2,2,1482,1,Garage,74,Yes,Yes,42.040455,-87.882173
+Single Family Residential,Des Plaines,60016,470995,4,2.5,2268,3,Garage,68,Yes,No,42.078104,-87.905532
+Condo/Coop,Des Plaines,60016,214000,2,2,1356,1,Garage,67,Yes,No,42.036279,-87.88318
+Condo/Coop,Des Plaines,60016,144900,2,2,1400,1,None,67,Yes,No,42.036076,-87.887174
+Single Family Residential,Des Plaines,60016,274900,4,2.5,1612,2,Garage,67,No,Yes,42.049018,-87.885404
+Single Family Residential,Des Plaines,60016,499000,4,3,2388,2,Garage,66,No,No,42.07146,-87.907345
+Single Family Residential,Des Plaines,60018,312000,4,2.5,1700,2,Garage,65,Yes,No,42.014731,-87.903849
+Single Family Residential,Des Plaines,60018,315000,3,2,1378,2,Garage,64,Yes,Yes,42.025244,-87.879338
+Condo/Coop,Des Plaines,60016,204900,2,2,1258,1,Garage,63,Yes,Yes,42.04325,-87.88384
+Single Family Residential,Des Plaines,60016,699900,5,3.5,5000,3,Garage,63,No,No,42.056372,-87.867213
+Condo/Coop,Des Plaines,60016,84900,1,1,906,2,None,60,No,No,42.051604,-87.855989
+Single Family Residential,Des Plaines,60016,185000,2,1.5,1190,2,None,58,Yes,No,42.041738,-87.892097
+Townhouse,Des Plaines,60016,294900,2,2.5,1775,2,Garage,58,Yes,No,42.048604,-87.892177
+Single Family Residential,Des Plaines,60016,549950,3,2.5,2156,2,Garage,56,Yes,Yes,42.057669,-87.9111
+Single Family Residential,Des Plaines,60016,480000,3,3,2078,2,Garage,56,Yes,Yes,42.041445,-87.891343
+Single Family Residential,Des Plaines,60016,570000,6,4.5,5350,6,Garage,56,Yes,No,42.065059,-87.862448
+Single Family Residential,Des Plaines,60018,379900,3,2,2100,2,Garage,56,Yes,No,42.024482,-87.927313
+Condo/Coop,Des Plaines,60016,289900,2,2,1730,1,Garage,54,Yes,Yes,42.038659,-87.891495
+Condo/Coop,Des Plaines,60016,134000,1,1,950,1,None,53,Yes,Yes,42.04209,-87.857788
+Condo/Coop,Des Plaines,60016,51000,1,1,906,2,None,53,Yes,Yes,42.061427,-87.866023
+Single Family Residential,Des Plaines,60018,299000,3,2.5,1250,2,Garage,52,Yes,Yes,42.025346,-87.931972
+Single Family Residential,Des Plaines,60016,465000,4,3.5,2950,2,Garage,51,No,Yes,42.038408,-87.893605
+Condo/Coop,Des Plaines,60016,229900,2,1.5,1182,1,Garage,51,No,No,42.0462622,-87.894386
+Single Family Residential,Des Plaines,60016,184900,4,2,1156,2,Garage,49,Yes,Yes,42.04783,-87.88232
+Single Family Residential,Des Plaines,60016,119900,2,1,1067,3,None,46,No,No,42.031241,-87.887336
+Single Family Residential,Des Plaines,60016,798000,5,6,7500,3,Garage,45,No,No,42.055585,-87.865338
+Single Family Residential,Des Plaines,60016,234000,2,1,1300,2,Garage,45,No,Yes,42.0318482,-87.88109
+Condo/Coop,Des Plaines,60016,247900,2,2,1702,1,Garage,45,Yes,Yes,42.037691,-87.88408
+Townhouse,Des Plaines,60016,319750,3,2.5,2162,4,Garage,44,No,Yes,42.0466719,-87.894126
+Single Family Residential,Des Plaines,60016,595000,5,3,3348,2,Garage,44,No,No,42.069462,-87.902602
+Condo/Coop,Des Plaines,60016,99900,1,1,670,2,None,43,No,Yes,42.0344257,-87.939115
+Single Family Residential,Des Plaines,60016,379000,4,2.5,2086,2,Garage,42,Yes,Yes,42.036919,-87.892901
+Single Family Residential,Des Plaines,60018,599000,5,4,3650,2,Garage,42,No,Yes,42.010965,-87.877641
+Single Family Residential,Des Plaines,60018,289800,3,2,1600,2,None,41,Yes,Yes,42.012964,-87.872956
+Condo/Coop,Des Plaines,60016,129900,2,1,1067,1,None,38,No,Yes,42.044653,-87.888995
+Single Family Residential,Des Plaines,60018,294900,3,1.5,1763,2,Garage,38,Yes,Yes,42.028663,-87.92606
+Multi-Family,Des Plaines,60018,229000,5,4.5,4315,5,Garage,37,No,Yes,42.02328,-87.936228
+Condo/Coop,Des Plaines,60016,144500,2,1.5,1150,2,None,37,No,Yes,42.050701,-87.855993
+Single Family Residential,Des Plaines,60016,299900,3,2,2300,2,Garage,37,No,Yes,42.058819,-87.905932
+Single Family Residential,Des Plaines,60016,239900,3,2,1500,2,Garage,36,Yes,Yes,42.045272,-87.862828
+Single Family Residential,Des Plaines,60018,474000,4,2.5,2400,2,Garage,35,No,Yes,42.025691,-87.903793
+Condo/Coop,Des Plaines,60016,91000,1,1,900,1,None,35,Yes,Yes,42.035094,-87.939312
+Condo/Coop,Des Plaines,60016,119000,1,1,1000,1,Garage,33,Yes,No,42.0399947,-87.883111
+Single Family Residential,Des Plaines,60018,599900,4,4,3600,2,Garage,31,No,No,42.006328,-87.883148
+Single Family Residential,Des Plaines,60016,99000,1,1,535,1,Garage,31,Yes,No,42.042775,-87.901103
+Single Family Residential,Des Plaines,60016,475000,4,2.5,2850,3,Garage,31,Yes,No,42.073262,-87.907257
+Condo/Coop,Des Plaines,60016,63000,2,1,1067,2,None,31,No,No,42.0610724,-87.865069
+Condo/Coop,Des Plaines,60016,205900,2,2,1260,1,Garage,30,Yes,No,42.04325,-87.88384
+Condo/Coop,Des Plaines,60016,314900,2,2,1738,2,Garage,30,No,No,42.040617,-87.883117
+Condo/Coop,Des Plaines,60016,64500,2,1,1067,2,None,29,No,Yes,42.0634776,-87.866686
+Single Family Residential,Des Plaines,60016,228500,3,1,1504,5,Garage,28,Yes,No,42.040223,-87.907713
+Single Family Residential,Des Plaines,60016,330000,3,2,2000,2,Garage,27,No,Yes,42.041459,-87.857231
+Single Family Residential,Des Plaines,60016,250000,4,2,1854,2,Garage,27,No,No,42.037317,-87.917014
+Single Family Residential,Des Plaines,60018,588600,5,4.5,3400,3,Garage,27,No,No,42.012998,-87.908321
+Single Family Residential,Des Plaines,60018,309000,3,2,1600,2,Garage,25,No,Yes,42.022973,-87.879954
+Single Family Residential,Des Plaines,60018,299900,3,2,1315,2,Garage,25,No,No,42.027904,-87.938238
+Condo/Coop,Des Plaines,60016,209900,2,2,1334,1,Garage,25,No,Yes,42.0367565,-87.883523
+Condo/Coop,Des Plaines,60016,194900,2,2,1380,1,Garage,23,Yes,No,42.044364,-87.891046
+Condo/Coop,Des Plaines,60016,389900,3,2,2426,2,Garage,23,No,No,42.0396397,-87.886759
+Single Family Residential,Des Plaines,60016,295000,3,2,1300,2,Garage,22,No,Yes,42.066407,-87.905967
+Condo/Coop,Des Plaines,60016,255000,2,2,1767,1,Garage,22,No,Yes,42.0396397,-87.886759
+Condo/Coop,Des Plaines,60016,149900,2,2,1382,2,Garage,22,No,No,42.0399947,-87.883111
+Single Family Residential,Des Plaines,60018,339500,3,2,2823,2,None,21,Yes,Yes,42.027846,-87.897957
+Condo/Coop,Des Plaines,60016,225000,2,2,1500,1,Garage,21,Yes,Yes,42.044402,-87.889992
+Condo/Coop,Des Plaines,60016,229000,2,2,1374,1,Garage,20,No,Yes,42.04406,-87.887366
+Single Family Residential,Des Plaines,60016,309900,3,2,1230,2,Garage,19,No,No,42.046772,-87.929125
+Single Family Residential,Des Plaines,60016,299900,3,2,1629,3,Garage,19,No,No,42.012272,-87.876233
+Single Family Residential,Des Plaines,60016,265000,3,2,1413,2,Garage,18,No,No,42.032368,-87.904715
+Single Family Residential,Des Plaines,60016,339000,3,2.5,1640,2,Garage,18,No,Yes,42.030002,-87.925738
+Condo/Coop,Des Plaines,60016,279900,2,2,1570,1,Garage,18,No,No,42.0461475,-87.888769
+Single Family Residential,Des Plaines,60016,239900,3,3,1308,1,Garage,17,No,Yes,42.057032,-87.918204
+Townhouse,Des Plaines,60016,220000,4,2,1800,1,None,17,No,Yes,42.034801,-87.93597
+Condo/Coop,Des Plaines,60016,124900,1,1,950,1,None,17,Yes,Yes,42.042917,-87.859074
+Single Family Residential,Des Plaines,60016,389900,5,2.5,2011,2,Garage,16,No,No,42.059736,-87.917926
+Condo/Coop,Des Plaines,60016,169950,1,1.5,1200,1,Garage,16,No,No,42.0461475,-87.888769
+Single Family Residential,Des Plaines,60016,315000,3,1,1010,2,Garage,14,No,No,42.041527,-87.863524
+Single Family Residential,Des Plaines,60016,574900,4,3.5,3100,2,Garage,14,No,Yes,42.039403,-87.928898
+Single Family Residential,Des Plaines,60016,419000,5,3.5,2437,2,Garage,14,No,No,42.043331,-87.901468
+Single Family Residential,Des Plaines,60016,489000,4,2.5,2498,2,Garage,14,No,No,42.038116,-87.91591
+Single Family Residential,Des Plaines,60018,420000,3,3,2236,2,Garage,13,No,No,42.014877,-87.905044
+Single Family Residential,Des Plaines,60016,174000,4,2,1719,2,Garage,12,No,No,42.047113,-87.883395
+Single Family Residential,Des Plaines,60016,309900,3,2,1629,2,Garage,12,No,Yes,42.062374,-87.919761
+Single Family Residential,Des Plaines,60016,249899,5,2,1800,1,Garage,11,No,No,42.034166,-87.918495
+Single Family Residential,Des Plaines,60016,280000,6,2.5,3234,2,Garage,11,No,Yes,42.038183,-87.934257
+Single Family Residential,Des Plaines,60016,400000,3,2.5,1836,2,Garage,11,No,No,42.043694,-87.902264
+Single Family Residential,Des Plaines,60016,275000,3,1.5,1765,1,Garage,11,No,No,42.045799,-87.917989
+Condo/Coop,Des Plaines,60016,175000,2,2,1177,1,Garage,9,No,No,42.040311,-87.891264
+Single Family Residential,Des Plaines,60018,355000,3,2,1308,2,Garage,8,No,No,42.015913,-87.900374
+Single Family Residential,Des Plaines,60016,339000,3,2.5,1600,1,Garage,8,No,Yes,42.03595,-87.909908
+Townhouse,Des Plaines,60016,299000,3,2.5,2162,2,Garage,8,No,No,42.0478899,-87.893028
+Single Family Residential,Des Plaines,60016,374900,3,3,1861,2,Garage,8,Yes,Yes,42.046655,-87.929948
+Townhouse,Des Plaines,60016,269900,3,2.5,1721,2,Garage,7,No,No,42.0524472,-87.904034
+Single Family Residential,Des Plaines,60018,525000,4,2.5,2184,2,Garage,7,No,Yes,42.018202,-87.89691
+Condo/Coop,Des Plaines,60016,90000,1,1,712,2,None,6,No,No,42.045192,-87.893526
+Condo/Coop,Des Plaines,60016,169000,2,2,1450,2,Garage,6,No,Yes,42.036697,-87.890239
+Condo/Coop,Des Plaines,60016,257000,2,2,1540,1,Garage,5,No,No,42.040617,-87.883117
+Condo/Coop,Des Plaines,60016,160000,2,2,1382,1,None,4,No,No,42.036158,-87.885123
+Condo/Coop,Des Plaines,60016,298900,2,2,1400,1,Garage,4,No,No,42.0381666,-87.891784
+Condo/Coop,Des Plaines,60016,129900,2,1,900,2,None,4,No,No,42.042164,-87.859538
+Single Family Residential,Des Plaines,60016,429900,4,3,2978,2,Garage,4,No,Yes,42.058754,-87.91065
+Condo/Coop,Des Plaines,60016,60000,2,1,866,2,None,3,No,No,42.032529,-87.937482
+Single Family Residential,Des Plaines,60016,269000,3,2,1629,2,Garage,3,No,Yes,42.063582,-87.918198
+Single Family Residential,Des Plaines,60016,259000,3,1.5,1431,2,Garage,3,No,No,42.059283,-87.90502
+Condo/Coop,Des Plaines,60016,124900,2,2,794,2,Garage,3,No,No,42.043135,-87.888335
+Condo/Coop,Des Plaines,60016,257000,2,2,1540,1,Garage,3,No,Yes,42.040617,-87.883117
+Single Family Residential,Des Plaines,60016,499750,4,3.5,2500,2,Garage,1,No,Yes,42.056411,-87.913042
+Condo/Coop,Des Plaines,60016,225000,2,2,1349,1,Garage,1,No,No,42.045895,-87.895569
+Single Family Residential,Des Plaines,60016,350000,3,1.5,1812,2,Garage,1,No,No,42.058325,-87.910652
+Condo/Coop,Des Plaines,60016,229900,2,2,1382,1,Garage,1,No,No,42.039584,-87.887093
+Single Family Residential,Des Plaines,60018,599000,5,5.5,4000,3,Garage,1,No,Yes,42.029362,-87.896453
+Condo/Coop,Des Plaines,60016,279900,3,2,1577,2,Garage,1,No,Yes,42.0407276,-87.884198
+Condo/Coop,Des Plaines,60016,154900,3,2.5,1500,0,None,1,No,Yes,42.039973,-87.85569
+Single Family Residential,Des Plaines,60016,369900,3,3,1617,2,Garage,1,No,Yes,42.065691,-87.90978
+Single Family Residential,Norridge,60706,399000,3,2,1600,2,Garage,200,Yes,Yes,41.973578,-87.833679
+Multi-Family,Norridge,60706,449000,6,2,2667,2,Garage,129,No,No,41.967067,-87.827467
+Single Family Residential,Norridge,60706,384000,3,2,1031,2,Garage,67,No,No,41.965131,-87.831944
+Single Family Residential,Norridge,60706,299900,3,1,1009,6,Garage,732,Yes,Yes,41.971446,-87.8334
+Single Family Residential,Norridge,60706,479900,4,4,3200,2,Garage,9,No,Yes,41.954956,-87.810594
+Single Family Residential,Norridge,60706,639000,3,3.5,3381,2,Garage,24,Yes,Yes,41.955865,-87.810584
+Single Family Residential,Norridge,60706,350000,3,3,2000,2,Garage,2,No,Yes,41.953926,-87.821076
+Single Family Residential,Norridge,60706,389500,3,2.5,1345,2,Garage,11,No,No,41.961007,-87.83612
+Single Family Residential,Norridge,60706,495000,5,2,8500,2,Garage,2,No,No,41.972622,-87.826066
+Single Family Residential,Norridge,60706,374900,4,3,1615,1,Garage,63,Yes,No,41.957007,-87.815446
+Single Family Residential,Norridge,60706,339900,3,2,1629,2,Garage,10,No,Yes,41.959301,-87.810624
+Single Family Residential,Norridge,60706,295000,4,2,1920,1,Garage,38,Yes,Yes,41.958494,-87.817391
+Single Family Residential,Norridge,60706,249900,3,2,1054,2,Garage,3,No,No,41.960137,-87.823527
+Single Family Residential,Norridge,60706,929000,5,5.5,6500,2,Garage,14,No,No,41.969274,-87.834413
+Single Family Residential,Norridge,60706,329750,3,2,1200,2,Garage,8,No,Yes,41.968645,-87.824104
+Single Family Residential,Norridge,60706,285000,3,1,1269,2,Garage,120,Yes,No,41.967969,-87.833856
+Single Family Residential,Norridge,60706,155000,2,1,836,1,None,56,No,Yes,41.953671,-87.811826
+Condo/Coop,Norridge,60706,192000,2,2,1560,2,Garage,22,No,No,41.974295,-87.841137
+Condo/Coop,Norridge,60706,269000,2,2,1400,1,Garage,22,No,Yes,41.964067,-87.835813
+Single Family Residential,Norridge,60706,329900,2,2,1056,2,Garage,21,No,No,41.960667,-87.82723
+Condo/Coop,Norridge,60706,179900,2,1.5,1080,2,Garage,41,Yes,Yes,41.967391,-87.818864
+Single Family Residential,Norridge,60706,269900,2,1,1067,3,None,21,No,Yes,41.95504,-87.815465
+Single Family Residential,Norridge,60706,435000,4,2,1920,1,Garage,15,No,Yes,41.971691,-87.826065
+Single Family Residential,Norridge,60706,146300,2,1,891,2,Garage,42,Yes,Yes,41.956195,-87.821074
+Single Family Residential,Norridge,60706,689000,4,3.5,3500,2,Garage,31,No,Yes,41.963974,-87.822768
+Single Family Residential,Norridge,60706,669000,5,4,2938,2,Garage,26,No,Yes,41.96981,-87.823012
+Condo/Coop,Norridge,60706,229900,2,2,1425,1,Garage,42,No,No,41.974305,-87.840543
+Single Family Residential,Norridge,60706,259900,3,1.5,1285,1,Garage,39,No,Yes,41.969596,-87.836168
+Single Family Residential,Norridge,60706,295000,3,2,981,2,Garage,24,Yes,No,41.968697,-87.822377
+Single Family Residential,Norridge,60706,369000,3,2,1800,1,Garage,1,No,No,41.964558,-87.829009
+Single Family Residential,Norridge,60706,845000,4,4.5,4170,3,Garage,95,No,No,41.97005,-87.833245
+Single Family Residential,Oak Park,60302,399900,4,2.5,2012,4,Garage,130,Yes,Yes,41.886452,-87.788374
+Condo/Coop,Oak Park,60302,136000,2,2,1382,1,None,73,No,Yes,41.880595,-87.799483
+Single Family Residential,Oak Park,60304,630000,5,2.5,2575,4,Garage,270,No,No,41.87401,-87.798218
+Townhouse,Oak Park,60302,149000,2,2,1382,1,None,241,No,Yes,41.8804599,-87.778169
+Multi-Family,Oak Park,60304,1150000,10,6,6825,9,None,231,No,Yes,41.878612,-87.787735
+Multi-Family,Oak Park,60304,659000,2,1,1067,5,None,207,No,No,41.865482,-87.795997
+Single Family Residential,Oak Park,60304,350000,5,2,2800,0,None,272,No,Yes,41.871255,-87.786274
+Single Family Residential,Oak Park,60302,597080,4,2.5,3064,2,Garage,217,Yes,No,41.904367,-87.795342
+Single Family Residential,Oak Park,60302,539000,5,1.5,1989,2,Garage,221,Yes,No,41.897186,-87.798182
+Condo/Coop,Oak Park,60302,159000,2,2,1382,0,None,77,No,No,41.882966,-87.801198
+Single Family Residential,Oak Park,60302,825000,5,2,2263,3,Garage,92,No,Yes,41.896782,-87.795174
+Single Family Residential,Oak Park,60302,515000,4,4,3000,2,Garage,56,No,Yes,41.894372,-87.777778
+Multi-Family,Oak Park,60302,777000,6,4.5,5086,2,Garage,80,No,Yes,41.885571,-87.798228
+Condo/Coop,Oak Park,60301,102000,2,1,880,1,None,256,Yes,No,41.887568,-87.798999
+Single Family Residential,Oak Park,60304,177500,2,1,1100,0,None,316,No,Yes,41.874659,-87.80325
+Condo/Coop,Oak Park,60302,180000,1,1,906,0,None,286,No,No,41.881793,-87.795267
+Single Family Residential,Oak Park,60302,165000,1,1,850,0,None,226,No,Yes,41.881469,-87.781703
+Single Family Residential,Oak Park,60302,584000,3,2,1629,2,Garage,112,Yes,Yes,41.901581,-87.792065
+Single Family Residential,Oak Park,60302,433000,4,2,2206,5,Garage,31,Yes,No,41.899033,-87.777337
+Single Family Residential,Oak Park,60302,889900,4,2.5,2184,2,Garage,28,Yes,Yes,41.904196,-87.797469
+Single Family Residential,Oak Park,60302,899000,4,3,2872,2,Garage,45,Yes,Yes,41.906726,-87.796896
+Single Family Residential,Oak Park,60302,849900,5,2.5,2575,4,Garage,22,No,No,41.90011,-87.798255
+Single Family Residential,Oak Park,60302,475000,3,1.5,1431,3,Garage,46,Yes,Yes,41.902656,-87.802934
+Single Family Residential,Oak Park,60302,849900,5,4.5,3655,7,Garage,64,Yes,No,41.901991,-87.802028
+Single Family Residential,Oak Park,60302,430000,4,2.5,1883,3,Garage,22,Yes,Yes,41.889581,-87.780297
+Single Family Residential,Oak Park,60302,477000,5,1.5,2200,6,Garage,16,Yes,No,41.88948,-87.777745
+Condo/Coop,Oak Park,60301,178000,1,1,852,0,None,17,No,Yes,41.888351,-87.792954
+Single Family Residential,Oak Park,60302,1150000,5,4.5,3000,3,Garage,4,No,No,41.895616,-87.789337
+Condo/Coop,Oak Park,60301,199000,2,1,1100,2,Garage,3,No,Yes,41.888249,-87.795386
+Condo/Coop,Oak Park,60301,189000,2,2,1182,0,None,35,Yes,Yes,41.8874573,-87.794904
+Single Family Residential,Oak Park,60302,739000,5,2.5,2880,2,None,15,No,Yes,41.884018,-87.798971
+Single Family Residential,Oak Park,60302,525000,4,3,2485,3,Garage,21,Yes,Yes,41.895534,-87.780478
+Single Family Residential,Oak Park,60302,775000,3,3.5,2399,2,Garage,3,No,Yes,41.906642,-87.793421
+Single Family Residential,Oak Park,60302,535000,4,2.5,2184,3,Garage,49,Yes,Yes,41.907125,-87.78054
+Single Family Residential,Oak Park,60302,819995,4,3.5,2991,4,Garage,8,No,Yes,41.897675,-87.797294
+Single Family Residential,Oak Park,60302,599000,4,3,3066,5,Garage,22,No,Yes,41.901771,-87.8031
+Single Family Residential,Oak Park,60302,479000,4,1.5,2584,2,Garage,3,No,No,41.903212,-87.795971
+Single Family Residential,Oak Park,60302,569999,4,1.5,1605,2,Garage,58,Yes,Yes,41.899051,-87.797378
+Single Family Residential,Oak Park,60302,799900,4,2.5,2601,2,Garage,28,No,Yes,41.906662,-87.789081
+Single Family Residential,Oak Park,60302,839300,4,3,2500,2,Garage,6,No,Yes,41.907346,-87.794651
+Single Family Residential,Oak Park,60302,699900,4,3,2555,2,Garage,102,Yes,No,41.906212,-87.787649
+Single Family Residential,Oak Park,60302,524500,3,2.5,1853,2,Garage,84,Yes,Yes,41.907953,-87.799175
+Single Family Residential,Oak Park,60302,278500,4,2,1300,2,None,17,Yes,No,41.9053439,-87.779988
+Single Family Residential,Oak Park,60302,239900,4,2,1920,1,Garage,16,Yes,No,41.905456,-87.778778
+Single Family Residential,Oak Park,60302,919000,4,3.5,4700,3,Garage,94,Yes,No,41.905025,-87.784073
+Single Family Residential,Oak Park,60302,474900,4,1.5,2017,2,Garage,39,Yes,No,41.904775,-87.790942
+Single Family Residential,Oak Park,60302,385000,3,1.5,1838,4,Garage,69,Yes,No,41.904914,-87.777023
+Single Family Residential,Oak Park,60302,1175000,5,4.5,3200,3,Garage,4,No,Yes,41.903766,-87.798431
+Single Family Residential,Oak Park,60302,724900,4,3,2322,2,Garage,15,No,No,41.891239,-87.778723
+Single Family Residential,Oak Park,60302,519000,4,2.5,2500,2,Garage,11,No,No,41.889099,-87.786804
+Single Family Residential,Oak Park,60302,675000,5,2,3992,2,Garage,36,Yes,No,41.892579,-87.795047
+Condo/Coop,Oak Park,60302,130000,1,1,900,1,None,83,Yes,No,41.890907,-87.795658
+Condo/Coop,Oak Park,60302,174500,1,1,1100,0,None,32,Yes,No,41.8915599,-87.793969
+Single Family Residential,Oak Park,60302,769900,6,4.5,3500,2,Garage,51,Yes,No,41.891834,-87.788509
+Condo/Coop,Oak Park,60301,79000,1,1,906,2,Garage,39,Yes,Yes,41.889431,-87.803046
+Condo/Coop,Oak Park,60302,202000,2,1,1398,1,None,231,Yes,Yes,41.8865582,-87.789371
+Single Family Residential,Oak Park,60302,449900,3,2,1629,2,None,7,No,No,41.885123,-87.79825
+Condo/Coop,Oak Park,60302,248800,2,1,1067,1,Garage,7,No,Yes,41.88498,-87.779231
+Townhouse,Oak Park,60302,615000,3,3.5,2700,2,Garage,207,No,No,41.8867657,-87.800207
+Single Family Residential,Oak Park,60302,1125000,5,3.5,3365,4,Garage,4,No,No,41.884861,-87.787382
+Single Family Residential,Oak Park,60302,564000,4,3,2485,6,Garage,95,Yes,No,41.882889,-87.779166
+Condo/Coop,Oak Park,60302,189000,2,2,1382,1,Garage,84,No,No,41.883988,-87.79392
+Condo/Coop,Oak Park,60302,182900,2,1,1067,0,None,81,Yes,Yes,41.884964,-87.796686
+Condo/Coop,Oak Park,60302,239900,2,1,1067,1,Garage,2,No,Yes,41.88498,-87.779231
+Single Family Residential,Oak Park,60302,1200000,5,3.5,3798,4,Garage,42,Yes,No,41.898737,-87.789437
+Single Family Residential,Oak Park,60302,525000,5,2,1974,2,Garage,14,No,No,41.896511,-87.80237
+Condo/Coop,Oak Park,60302,509000,2,2,1962,2,Garage,109,Yes,No,41.889831,-87.794038
+Condo/Coop,Oak Park,60302,179000,1,1,906,0,None,60,Yes,Yes,41.891767,-87.794092
+Townhouse,Oak Park,60302,515000,4,3.5,2828,3,Garage,25,No,Yes,41.890509,-87.785214
+Condo/Coop,Oak Park,60302,99000,1,1,906,0,None,19,No,Yes,41.891107,-87.803044
+Condo/Coop,Oak Park,60302,99900,1,1,906,1,Garage,21,No,No,41.883975,-87.802027
+Condo/Coop,Oak Park,60302,240000,2,2,1226,1,Garage,203,Yes,No,41.886634,-87.784568
+Single Family Residential,Oak Park,60302,799900,5,3.5,3567,3,Garage,42,Yes,Yes,41.895005,-87.785338
+Single Family Residential,Oak Park,60302,895000,4,3.5,2828,3,Garage,67,Yes,Yes,41.905179,-87.796025
+Single Family Residential,Oak Park,60302,519000,3,1.5,2107,2,Garage,26,No,Yes,41.902433,-87.800529
+Single Family Residential,Oak Park,60302,569900,4,2.5,2594,2,Garage,35,No,No,41.904435,-87.786388
+Single Family Residential,Oak Park,60302,354999,4,2,1498,6,Garage,39,Yes,Yes,41.904361,-87.781187
+Single Family Residential,Oak Park,60302,699000,3,3.5,2000,2,Garage,28,No,Yes,41.907884,-87.786934
+Single Family Residential,Oak Park,60304,925000,5,3.5,4100,5,Garage,25,No,No,41.8954639,-87.795132
+Condo/Coop,Oak Park,60304,72000,1,1,906,0,None,31,No,No,41.8780914,-87.791452
+Single Family Residential,Oak Park,60304,449000,3,2,1520,3,Garage,177,Yes,Yes,41.8791734,-87.788983
+Condo/Coop,Oak Park,60304,135000,2,1,1067,0,None,43,Yes,No,41.8780914,-87.791452
+Condo/Coop,Oak Park,60304,184900,2,1,1250,0,None,41,Yes,No,41.8780914,-87.791452
+Multi-Family,Oak Park,60302,499000,4,2,1920,2,None,25,No,Yes,41.892866,-87.803294
+Multi-Family,Oak Park,60302,399000,4,3,2485,4,Garage,74,Yes,No,41.88949,-87.777036
+Condo/Coop,Oak Park,60302,169900,2,2,1382,1,None,91,No,No,41.880871,-87.78986
+Condo/Coop,Oak Park,60302,88000,1,1,515,1,None,24,No,Yes,41.886553,-87.78679
+Single Family Residential,Oak Park,60304,287000,2,1.5,1214,2,Garage,24,No,No,41.868478,-87.790543
+Condo/Coop,Oak Park,60302,87000,1,1,906,0,None,32,No,Yes,41.881865,-87.796598
+Condo/Coop,Oak Park,60302,161000,2,2,900,1,None,24,No,No,41.881964,-87.788212
+Single Family Residential,Oak Park,60302,480000,5,1.5,1989,5,Garage,24,No,Yes,41.882892,-87.785002
+Townhouse,Oak Park,60304,395900,3,4,2397,2,Garage,38,Yes,Yes,41.865481,-87.789503
+Single Family Residential,Oak Park,60304,279900,2,1,1067,2,Garage,18,No,No,41.87053,-87.781323
+Condo/Coop,Oak Park,60302,52000,1,1,840,1,None,70,Yes,No,41.882098,-87.780671
+Condo/Coop,Oak Park,60302,169900,3,1,1500,0,None,64,Yes,Yes,41.88172,-87.77925
+Condo/Coop,Oak Park,60302,199000,2,1,1067,0,None,44,No,No,41.885747,-87.799335
+Single Family Residential,Oak Park,60302,2500000,6,6,9500,4,Garage,32,No,No,41.894828,-87.795114
+Condo/Coop,Oak Park,60302,288800,3,2,1800,1,Garage,35,Yes,Yes,41.882185,-87.794702
+Single Family Residential,Oak Park,60304,898800,4,3.5,2828,2,Garage,36,No,Yes,41.874659,-87.796804
+Condo/Coop,Oak Park,60304,89900,1,1,906,0,None,43,No,No,41.872784,-87.78995
+Condo/Coop,Oak Park,60304,159495,2,1,1067,0,None,91,Yes,Yes,41.872772,-87.790641
+Single Family Residential,Oak Park,60304,315000,2,2,1163,2,Garage,52,No,No,41.8671546,-87.779116
+Condo/Coop,Oak Park,60302,145000,2,1.5,1214,1,None,84,Yes,No,41.882098,-87.780671
+Single Family Residential,Oak Park,60304,385000,3,1.5,1431,2,Garage,22,Yes,No,41.879382,-87.780416
+Condo/Coop,Oak Park,60302,159000,2,2,1000,1,None,107,Yes,No,41.882098,-87.780671
+Condo/Coop,Oak Park,60302,129900,2,1.5,900,1,None,50,Yes,Yes,41.882098,-87.780671
+Single Family Residential,Oak Park,60304,399000,3,2,1525,2,Garage,22,Yes,Yes,41.879052,-87.779892
+Single Family Residential,Oak Park,60302,269900,3,1,1200,2,Garage,1,No,Yes,41.901643,-87.780564
+Condo/Coop,Oak Park,60302,183500,2,1,1067,1,None,1,No,Yes,41.894453,-87.781142
+Single Family Residential,Oak Park,60304,345000,3,2,1500,2,Garage,21,No,Yes,41.869149,-87.788637
+Condo/Coop,Oak Park,60304,139000,2,1,1067,0,None,18,No,Yes,41.872772,-87.790641
+Single Family Residential,Oak Park,60304,459900,3,1.5,1740,2,Garage,60,Yes,No,41.868558,-87.791776
+Condo/Coop,Oak Park,60302,149000,2,2,1382,1,None,200,Yes,Yes,41.881964,-87.788212
+Single Family Residential,Oak Park,60304,424900,3,2.5,1415,1,Garage,59,Yes,Yes,41.870647,-87.78572
+Condo/Coop,Oak Park,60302,154900,2,1,1180,0,None,16,No,No,41.88139,-87.785133
+Condo/Coop,Oak Park,60302,162500,2,1,1100,1,Garage,15,No,No,41.881988,-87.787146
+Single Family Residential,Oak Park,60304,624000,4,2.5,2025,2,Garage,16,Yes,No,41.877513,-87.787698
+Single Family Residential,Oak Park,60304,329900,3,1,1258,2,Garage,60,Yes,No,41.875829,-87.787123
+Condo/Coop,Oak Park,60304,174900,1,1,906,1,Garage,6,No,No,41.8655472,-87.785759
+Single Family Residential,Oak Park,60304,350000,4,2,1920,2,Garage,6,No,Yes,41.870837,-87.785016
+Single Family Residential,Oak Park,60304,368800,4,2.5,2184,2,Garage,1,No,Yes,41.871138,-87.786255
+Single Family Residential,Oak Park,60304,365000,3,1,1688,2,Garage,1,No,No,41.877463,-87.787179
+Single Family Residential,Oak Park,60302,724500,4,2.5,3412,2,Garage,326,Yes,Yes,41.907052,-87.794127
+Condo/Coop,Oak Park,60304,52000,1,1,750,0,None,144,Yes,No,41.870454,-87.794304
+Townhouse,Oak Park,60304,417400,3,3,2800,2,Garage,11,No,No,41.8673962,-87.79384
+Condo/Coop,Oak Park,60304,134900,2,1,1000,1,None,28,Yes,Yes,41.870461,-87.794306
+Condo/Coop,Oak Park,60302,311000,3,2.5,1500,2,None,95,No,Yes,41.881211,-87.794676
+Single Family Residential,Oak Park,60304,264000,2,2,1134,2,None,4,No,Yes,41.874322,-87.795875
+Single Family Residential,Oak Park,60302,874000,4,3.5,3400,4,Garage,92,Yes,Yes,41.907078,-87.789734
+Single Family Residential,Oak Park,60302,1170000,4,4,4359,2,Garage,92,Yes,Yes,41.9068244,-87.799861
+Condo/Coop,Oak Park,60302,179000,2,1,1067,0,None,18,No,No,41.881301,-87.790571
+Condo/Coop,Oak Park,60302,119500,1,1,725,1,None,17,No,Yes,41.881909,-87.794695
+Single Family Residential,Oak Park,60302,795000,4,2.5,2184,2,Garage,14,No,Yes,41.882373,-87.791535
+Townhouse,Oak Park,60302,544900,4,3.5,2700,2,Garage,71,No,No,41.8808594,-87.80072
+Condo/Coop,Oak Park,60302,259000,2,1.5,1214,1,None,11,No,No,41.8820603,-87.79059
+Condo/Coop,Oak Park,60302,79000,1,1,906,1,None,46,Yes,No,41.88182,-87.792347
+Townhouse,Oak Park,60302,489900,3,4,2850,2,Garage,30,No,Yes,41.8798096,-87.80077
+Condo/Coop,Oak Park,60302,94900,1,1,526,1,Garage,7,No,Yes,41.880791,-87.791494
+Single Family Residential,Oak Park,60304,599000,4,2.5,1854,2,Garage,4,No,Yes,41.878484,-87.795698
+Condo/Coop,Oak Park,60302,204500,2,1,1067,1,None,3,No,No,41.8812149,-87.800926
+Condo/Coop,Oak Park,60302,70000,1,1,906,1,None,121,Yes,Yes,41.880656,-87.796564
+Single Family Residential,Oak Park,60304,359000,3,1.5,1273,2,Garage,2,No,Yes,41.875084,-87.79077
+Condo/Coop,Oak Park,60302,239000,2,1,1445,1,None,15,Yes,Yes,41.882343,-87.794707
+Townhouse,Oak Park,60302,325000,3,2.5,1620,1,None,49,Yes,Yes,41.888216,-87.791276
+Townhouse,Oak Park,60302,459000,3,3.5,2450,2,Garage,1,No,No,41.880453,-87.800844
+Condo/Coop,Oak Park,60301,180000,1,1,895,0,None,38,Yes,Yes,41.888351,-87.792954
+Condo/Coop,Oak Park,60302,134900,1,1,1100,1,None,50,No,No,41.881469,-87.781703
+Single Family Residential,Oak Park,60302,279000,4,2,1959,0,None,168,Yes,No,41.89668,-87.78299
+Single Family Residential,Oak Park,60304,519000,5,2,2600,3,Garage,51,Yes,Yes,41.875657,-87.784669
+Condo/Coop,Oak Park,60302,180000,2,1,1067,2,None,8,No,No,41.882544,-87.784061
+Condo/Coop,Oak Park,60301,157000,2,2,1200,0,None,151,Yes,Yes,41.889021,-87.797929
+Condo/Coop,Oak Park,60302,249700,3,2,1300,1,None,29,Yes,Yes,41.8812843,-87.800295
+Single Family Residential,Oak Park,60304,644900,4,3.5,2828,2,Garage,99,Yes,Yes,41.871378,-87.798839
+Single Family Residential,Oak Park,60304,342800,3,1,1258,2,Garage,15,No,No,41.876155,-87.800086
+Single Family Residential,Oak Park,60304,639000,3,2.5,1853,4,Garage,68,Yes,No,41.875555,-87.800067
+Condo/Coop,Oak Park,60302,84000,1,1,900,1,None,17,No,No,41.8804182,-87.799583
+Single Family Residential,Oak Park,60304,499000,3,2,2900,2,Garage,448,Yes,Yes,41.876474,-87.798297
+Single Family Residential,Oak Park,60304,375000,4,1.5,1687,2,Garage,2,No,No,41.870005,-87.796915
+Condo/Coop,Oak Park,60302,185000,2,1.5,1000,1,None,1,No,Yes,41.885211,-87.799314
+Condo/Coop,Oak Park,60301,72000,2,2,1382,0,None,64,Yes,No,41.888262,-87.799398
+Single Family Residential,Oak Park,60302,892000,4,2.5,2541,1,Garage,10,Yes,Yes,41.897394,-87.798808
+Single Family Residential,Oak Park,60302,1195000,6,4.5,4454,2,Garage,36,Yes,No,41.892233,-87.797989
+Single Family Residential,Oak Park,60302,420000,5,1.5,1810,2,Garage,60,Yes,No,41.901334,-87.790325
+Single Family Residential,Oak Park,60302,899000,3,3,3336,2,Garage,28,No,Yes,41.90516,-87.797504
+Single Family Residential,Oak Park,60302,825000,4,3.5,2828,2,Garage,1,No,Yes,41.904693,-87.800609
+Condo/Coop,Oak Park,60302,119900,1,1,906,1,None,70,Yes,Yes,41.8798061,-87.801883
+Condo/Coop,Oak Park,60302,95000,1,1,800,2,None,35,No,Yes,41.880629,-87.802769
+Condo/Coop,Oak Park,60302,106490,1,1,906,1,None,312,Yes,Yes,41.883775,-87.80202
+Single Family Residential,Oak Park,60302,650000,4,2.5,3500,4,Garage,63,No,Yes,41.881869,-87.80281
+Condo/Coop,Oak Park,60302,120000,1,1,1000,1,None,16,No,Yes,41.881127,-87.801132
+Condo/Coop,Oak Park,60302,209000,2,1,1490,1,Garage,67,Yes,Yes,41.880304,-87.803456
+Townhouse,Oak Park,60302,469000,3,3.5,2450,2,Garage,18,No,Yes,41.8801678,-87.801176
+Single Family Residential,Oak Park,60304,949900,5,5,3800,3,Garage,4,No,No,41.86779,-87.80148
+Single Family Residential,Oak Park,60304,724500,5,4,3792,4,Garage,4,No,Yes,41.86836,-87.802333
+Condo/Coop,Oak Park,60302,79000,1,1,906,1,None,30,Yes,Yes,41.882284,-87.802824
+Condo/Coop,Oak Park,60302,140000,1,1,906,0,None,29,Yes,No,41.8819492,-87.803396
+Condo/Coop,Oak Park,60302,575000,2,2.5,1932,2,Garage,11,No,No,41.8863993,-87.802218
+Single Family Residential,Oak Park,60302,894900,4,3.5,2828,2,Garage,71,Yes,Yes,41.898467,-87.802787
+Multi-Family,Oak Park,60302,459000,6,3,3453,3,Garage,290,Yes,Yes,41.882384,-87.776949
+Single Family Residential,Oak Park,60304,312500,3,2,1544,2,Garage,15,No,Yes,41.86604,-87.776952
+Multi-Family,Oak Park,60304,739900,7,3,4070,2,Garage,73,Yes,Yes,41.8731,-87.777209
+Condo/Coop,Oak Park,60302,103000,1,1,906,0,None,119,Yes,No,41.881761,-87.776581
+Single Family Residential,Oak Park,60304,339900,4,2,1227,3,Garage,29,Yes,No,41.865912,-87.778174
